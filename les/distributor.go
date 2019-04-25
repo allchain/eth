@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common/mclock"
+	"github.com/galaxy/galaxy/common/mclock"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

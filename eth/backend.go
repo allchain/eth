@@ -25,30 +25,34 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/clique"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/bloombits"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/miner"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/crypto"
+
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/consensus/clique"
+	"github.com/galaxy/galaxy/consensus/ethash"
+	"github.com/galaxy/galaxy/consensus/istanbul"
+	istanbulBackend "github.com/galaxy/galaxy/consensus/istanbul/backend"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/core/bloombits"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy/eth/downloader"
+	"github.com/galaxy/galaxy/eth/filters"
+	"github.com/galaxy/galaxy/eth/gasprice"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/internal/ethapi"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/miner"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy/rpc"
 )
 
 type LesServer interface {
@@ -135,7 +139,7 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 		chainDb:        chainDb,
 		eventMux:       ctx.EventMux,
 		accountManager: ctx.AccountManager,
-		engine:         CreateConsensusEngine(ctx, chainConfig, &config.Ethash, config.MinerNotify, config.MinerNoverify, chainDb),
+		engine:         CreateConsensusEngine(ctx, chainConfig, config, config.MinerNotify, config.MinerNoverify, chainDb),
 		shutdownChan:   make(chan bool),
 		networkID:      config.NetworkId,
 		gasPrice:       config.MinerGasPrice,
@@ -144,6 +148,10 @@ func New(ctx *node.ServiceContext, config *Config) (*Ethereum, error) {
 		bloomIndexer:   NewBloomIndexer(chainDb, params.BloomBitsBlocks, params.BloomConfirms),
 	}
 
+	// force to set the istanbul etherbase to node key address
+	if chainConfig.Istanbul != nil {
+		eth.etherbase = crypto.PubkeyToAddress(ctx.NodeKey().PublicKey)
+	}
 	bcVersion := rawdb.ReadDatabaseVersion(chainDb)
 	var dbVer = "<nil>"
 	if bcVersion != nil {
@@ -225,13 +233,22 @@ func makeExtraData(extra []byte) []byte {
 }
 
 // CreateConsensusEngine creates the required type of consensus engine instance for an Ethereum service
-func CreateConsensusEngine(ctx *node.ServiceContext, chainConfig *params.ChainConfig, config *ethash.Config, notify []string, noverify bool, db ethdb.Database) consensus.Engine {
+func CreateConsensusEngine(ctx *node.ServiceContext, chainConfig *params.ChainConfig, config *Config, notify []string,
+	noverify bool, db ethdb.Database) consensus.Engine {
 	// If proof-of-authority is requested, set it up
 	if chainConfig.Clique != nil {
 		return clique.New(chainConfig.Clique, db)
 	}
+	// If Istanbul is requested, set it up
+	if chainConfig.Istanbul != nil {
+		if chainConfig.Istanbul.Epoch != 0 {
+			config.Istanbul.Epoch = chainConfig.Istanbul.Epoch
+		}
+		config.Istanbul.ProposerPolicy = istanbul.ProposerPolicy(chainConfig.Istanbul.ProposerPolicy)
+		return istanbulBackend.New(&config.Istanbul, ctx.NodeKey(), db)
+	}
 	// Otherwise assume proof-of-work
-	switch config.PowMode {
+	switch config.Ethash.PowMode {
 	case ethash.ModeFake:
 		log.Warn("Ethash used in fake mode")
 		return ethash.NewFaker()
@@ -243,12 +260,12 @@ func CreateConsensusEngine(ctx *node.ServiceContext, chainConfig *params.ChainCo
 		return ethash.NewShared()
 	default:
 		engine := ethash.New(ethash.Config{
-			CacheDir:       ctx.ResolvePath(config.CacheDir),
-			CachesInMem:    config.CachesInMem,
-			CachesOnDisk:   config.CachesOnDisk,
-			DatasetDir:     config.DatasetDir,
-			DatasetsInMem:  config.DatasetsInMem,
-			DatasetsOnDisk: config.DatasetsOnDisk,
+			CacheDir:       ctx.ResolvePath(config.Ethash.CacheDir),
+			CachesInMem:    config.Ethash.CachesInMem,
+			CachesOnDisk:   config.Ethash.CachesOnDisk,
+			DatasetDir:     config.Ethash.DatasetDir,
+			DatasetsInMem:  config.Ethash.DatasetsInMem,
+			DatasetsOnDisk: config.Ethash.DatasetsOnDisk,
 		}, notify, noverify)
 		engine.SetThreads(-1) // Disable CPU mining
 		return engine
@@ -519,7 +536,6 @@ func (s *Ethereum) Start(srvr *p2p.Server) error {
 func (s *Ethereum) Stop() error {
 	s.bloomIndexer.Close()
 	s.blockchain.Stop()
-	s.engine.Close()
 	s.protocolManager.Stop()
 	if s.lesServer != nil {
 		s.lesServer.Stop()

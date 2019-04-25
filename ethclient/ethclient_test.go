@@ -22,8 +22,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/ethereum/go-ethereum"
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/galaxy/galaxy"
+	"github.com/galaxy/galaxy/common"
 )
 
 // Verify that Client implements the ethereum interfaces.

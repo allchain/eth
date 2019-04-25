@@ -22,12 +22,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	"github.com/ethereum/go-ethereum/swarm/pot"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/p2p/protocols"
+	"github.com/galaxy/galaxy/swarm/pot"
 )
 
 func init() {

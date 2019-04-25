@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/crypto"
 	"github.com/pborman/uuid"
 )
 

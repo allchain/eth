@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/galaxy/galaxy/cmd/utils"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/contracts/ens"
+	"github.com/galaxy/galaxy/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

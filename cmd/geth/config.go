@@ -27,13 +27,13 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/dashboard"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/graphql"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
-	whisper "github.com/ethereum/go-ethereum/whisper/whisperv6"
+	"github.com/galaxy/galaxy/cmd/utils"
+	"github.com/galaxy/galaxy/dashboard"
+	"github.com/galaxy/galaxy/eth"
+	"github.com/galaxy/galaxy/graphql"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/params"
+	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
 	"github.com/naoina/toml"
 )
 

@@ -25,16 +25,16 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/math"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy/rlp"
 )
 
 //go:generate gencodec -type Genesis -field-override genesisSpecMarshaling -out gen_genesis.go
@@ -169,7 +169,6 @@ func SetupGenesisBlockWithOverride(db ethdb.Database, genesis *Genesis, constant
 		block, err := genesis.Commit(db)
 		return genesis.Config, block.Hash(), err
 	}
-
 	// Check whether the genesis block is already written.
 	if genesis != nil {
 		hash := genesis.ToBlock(nil).Hash()
@@ -306,12 +305,14 @@ func GenesisBlockForTesting(db ethdb.Database, addr common.Address, balance *big
 // DefaultGenesisBlock returns the Ethereum main net genesis block.
 func DefaultGenesisBlock() *Genesis {
 	return &Genesis{
-		Config:     params.MainnetChainConfig,
-		Nonce:      66,
-		ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa"),
+		Config: params.MainnetChainConfig,
+		Nonce:  math.MaxUint64,
+		//ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa"),
+		ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82faf86df86994dab21cf3587db83c9c5a871baf1a09006df90d6d946fe95084fd21d672e4db06e1ba92e9e3d2dc0bfc94955d6e2d9ec391b31600a7dded61b7024e7184aa944ba8f974d2d8355c1981999c2edf7399d39a9b92946b1fbb95c1d2758bf637d5683c30eaa4eb05497980c0"),
 		GasLimit:   5000,
-		Difficulty: big.NewInt(17179869184),
+		Difficulty: big.NewInt(1),
 		Alloc:      decodePrealloc(mainnetAllocData),
+		Mixhash:    types.IstanbulDigest,
 	}
 }
 

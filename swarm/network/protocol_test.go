@@ -25,14 +25,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/enr"
-	"github.com/ethereum/go-ethereum/p2p/protocols"
-	p2ptest "github.com/ethereum/go-ethereum/p2p/testing"
-	"github.com/ethereum/go-ethereum/swarm/pot"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/p2p/enr"
+	"github.com/galaxy/galaxy/p2p/protocols"
+	p2ptest "github.com/galaxy/galaxy/p2p/testing"
+	"github.com/galaxy/galaxy/swarm/pot"
 )
 
 const (

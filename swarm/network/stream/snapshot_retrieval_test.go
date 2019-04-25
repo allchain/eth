@@ -22,14 +22,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/network/simulation"
-	"github.com/ethereum/go-ethereum/swarm/state"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy/swarm/network/simulation"
+	"github.com/galaxy/galaxy/swarm/state"
+	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy/swarm/testutil"
 )
 
 //constants for random file generation

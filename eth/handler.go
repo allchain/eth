@@ -26,20 +26,22 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/fetcher"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/crypto"
+
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/consensus/misc"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/eth/downloader"
+	"github.com/galaxy/galaxy/eth/fetcher"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy/rlp"
 )
 
 const (
@@ -99,11 +101,16 @@ type ProtocolManager struct {
 	// wait group is used for graceful shutdowns during downloading
 	// and processing
 	wg sync.WaitGroup
+
+	engine consensus.Engine
 }
 
 // NewProtocolManager returns a new Ethereum sub protocol manager. The Ethereum sub protocol manages peers capable
 // with the Ethereum network.
-func NewProtocolManager(config *params.ChainConfig, mode downloader.SyncMode, networkID uint64, mux *event.TypeMux, txpool txPool, engine consensus.Engine, blockchain *core.BlockChain, chaindb ethdb.Database, whitelist map[uint64]common.Hash) (*ProtocolManager, error) {
+func NewProtocolManager(config *params.ChainConfig, mode downloader.SyncMode, networkID uint64, mux *event.TypeMux,
+	txpool txPool, engine consensus.Engine, blockchain *core.BlockChain, chaindb ethdb.Database,
+	whitelist map[uint64]common.Hash) (*ProtocolManager, error) {
+
 	// Create the protocol manager with the base fields
 	manager := &ProtocolManager{
 		networkID:   networkID,
@@ -117,7 +124,13 @@ func NewProtocolManager(config *params.ChainConfig, mode downloader.SyncMode, ne
 		noMorePeers: make(chan struct{}),
 		txsyncCh:    make(chan *txsync),
 		quitSync:    make(chan struct{}),
+		engine:      engine,
 	}
+
+	if handler, ok := manager.engine.(consensus.Handler); ok {
+		handler.SetBroadcaster(manager)
+	}
+
 	// Figure out whether to allow fast sync or not
 	if mode == downloader.FastSync && blockchain.CurrentBlock().NumberU64() > 0 {
 		log.Warn("Blockchain not empty, fast sync disabled")
@@ -126,9 +139,10 @@ func NewProtocolManager(config *params.ChainConfig, mode downloader.SyncMode, ne
 	if mode == downloader.FastSync {
 		manager.fastSync = uint32(1)
 	}
+	protocol := engine.Protocol()
 	// Initiate a sub-protocol for every implemented version we can handle
-	manager.SubProtocols = make([]p2p.Protocol, 0, len(ProtocolVersions))
-	for i, version := range ProtocolVersions {
+	manager.SubProtocols = make([]p2p.Protocol, 0, len(protocol.Versions))
+	for i, version := range protocol.Versions {
 		// Skip protocol version if incompatible with the mode of operation
 		if mode == downloader.FastSync && version < eth63 {
 			continue
@@ -136,9 +150,9 @@ func NewProtocolManager(config *params.ChainConfig, mode downloader.SyncMode, ne
 		// Compatible; initialise the sub-protocol
 		version := version // Closure for the run
 		manager.SubProtocols = append(manager.SubProtocols, p2p.Protocol{
-			Name:    ProtocolName,
+			Name:    protocol.Name,
 			Version: version,
-			Length:  ProtocolLengths[i],
+			Length:  protocol.Lengths[i],
 			Run: func(p *p2p.Peer, rw p2p.MsgReadWriter) error {
 				peer := manager.newPeer(int(version), p, rw)
 				select {
@@ -337,7 +351,14 @@ func (pm *ProtocolManager) handleMsg(p *peer) error {
 		return errResp(ErrMsgTooLarge, "%v > %v", msg.Size, ProtocolMaxMsgSize)
 	}
 	defer msg.Discard()
-
+	if handler, ok := pm.engine.(consensus.Handler); ok {
+		pubKey := p.Node().Pubkey()
+		addr := crypto.PubkeyToAddress(*pubKey)
+		handled, err := handler.HandleMsg(addr, msg)
+		if handled {
+			return err
+		}
+	}
 	// Handle the message depending on its contents
 	switch {
 	case msg.Code == StatusMsg:
@@ -706,6 +727,22 @@ func (pm *ProtocolManager) handleMsg(p *peer) error {
 		return errResp(ErrInvalidMsgCode, "%v", msg.Code)
 	}
 	return nil
+}
+
+func (pm *ProtocolManager) Enqueue(id string, block *types.Block) {
+	pm.fetcher.Enqueue(id, block)
+}
+
+func (pm *ProtocolManager) FindPeers(targets map[common.Address]bool) map[common.Address]consensus.Peer {
+	m := make(map[common.Address]consensus.Peer)
+	for _, p := range pm.peers.peers {
+		pubKey := p.Node().Pubkey()
+		addr := crypto.PubkeyToAddress(*pubKey)
+		if targets[addr] {
+			m[addr] = p
+		}
+	}
+	return m
 }
 
 // BroadcastBlock will either propagate a block to a subset of it's peers, or

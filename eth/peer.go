@@ -24,10 +24,10 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/rlp"
 )
 
 var (
@@ -191,6 +191,10 @@ func (p *peer) MarkTransaction(hash common.Hash) {
 		p.knownTxs.Pop()
 	}
 	p.knownTxs.Add(hash)
+}
+
+func (p *peer) Send(msgcode uint64, data interface{}) error {
+	return p2p.Send(p.rw, msgcode, data)
 }
 
 // SendTransactions sends transactions to the peer and includes the hashes

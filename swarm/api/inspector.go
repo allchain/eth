@@ -20,8 +20,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/swarm/network"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/galaxy/galaxy/swarm/network"
+	"github.com/galaxy/galaxy/swarm/storage"
 )
 
 type Inspector struct {

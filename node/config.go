@@ -26,17 +26,17 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/accounts/external"
+	"github.com/galaxy/galaxy/accounts/keystore"
+	"github.com/galaxy/galaxy/accounts/scwallet"
+	"github.com/galaxy/galaxy/accounts/usbwallet"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/rpc"
 )
 
 const (

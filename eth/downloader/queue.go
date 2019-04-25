@@ -25,11 +25,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/prque"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/metrics"
 )
 
 var (

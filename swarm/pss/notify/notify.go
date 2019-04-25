@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/pss"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy/swarm/pss"
 )
 
 const (

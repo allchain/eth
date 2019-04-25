@@ -26,13 +26,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/params"
 )
 
 // testTxPoolConfig is a transaction pool configuration without stateful disk

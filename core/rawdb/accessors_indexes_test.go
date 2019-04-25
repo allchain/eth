@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/rlp"
 )
 
 // Tests that positional lookup metadata can be stored and retrieved.

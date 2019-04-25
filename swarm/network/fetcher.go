@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/swarm/storage"
-	"github.com/ethereum/go-ethereum/swarm/tracing"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy/swarm/tracing"
 	olog "github.com/opentracing/opentracing-go/log"
 )
 

@@ -26,7 +26,7 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common/hexutil"
+	"github.com/galaxy/galaxy/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 
@@ -64,6 +64,8 @@ func HexToHash(s string) Hash { return BytesToHash(FromHex(s)) }
 
 // Bytes gets the byte representation of the underlying hash.
 func (h Hash) Bytes() []byte { return h[:] }
+
+func (h Hash) Empty() bool { return h == Hash{} }
 
 // Big converts a hash to a big integer.
 func (h Hash) Big() *big.Int { return new(big.Int).SetBytes(h[:]) }

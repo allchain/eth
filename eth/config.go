@@ -24,13 +24,15 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus/ethash"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/galaxy/galaxy/consensus/istanbul"
+
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/consensus/ethash"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/eth/downloader"
+	"github.com/galaxy/galaxy/eth/gasprice"
+	"github.com/galaxy/galaxy/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.
@@ -59,6 +61,7 @@ var DefaultConfig = Config{
 		Blocks:     20,
 		Percentile: 60,
 	},
+	Istanbul: *istanbul.DefaultConfig,
 }
 
 func init() {
@@ -130,6 +133,9 @@ type Config struct {
 
 	// Ethash options
 	Ethash ethash.Config
+
+	// Istanbul options
+	Istanbul istanbul.Config
 
 	// Transaction pool options
 	TxPool core.TxPoolConfig

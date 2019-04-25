@@ -27,12 +27,12 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/swarm/testutil"
+	"github.com/galaxy/galaxy/swarm/testutil"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/mem"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy/swarm/storage/mock/mem"
 	ldberrors "github.com/syndtr/goleveldb/leveldb/errors"
 )
 

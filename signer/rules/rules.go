@@ -22,11 +22,11 @@ import (
 	"os"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/signer/core"
-	"github.com/ethereum/go-ethereum/signer/rules/deps"
-	"github.com/ethereum/go-ethereum/signer/storage"
+	"github.com/galaxy/galaxy/internal/ethapi"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/signer/core"
+	"github.com/galaxy/galaxy/signer/rules/deps"
+	"github.com/galaxy/galaxy/signer/storage"
 	"github.com/robertkrimen/otto"
 )
 

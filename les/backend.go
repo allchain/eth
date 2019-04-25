@@ -22,28 +22,28 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/bloombits"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/eth/filters"
-	"github.com/ethereum/go-ethereum/eth/gasprice"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/params"
-	rpc "github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/core/bloombits"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/eth"
+	"github.com/galaxy/galaxy/eth/downloader"
+	"github.com/galaxy/galaxy/eth/filters"
+	"github.com/galaxy/galaxy/eth/gasprice"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/internal/ethapi"
+	"github.com/galaxy/galaxy/light"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/discv5"
+	"github.com/galaxy/galaxy/params"
+	rpc "github.com/galaxy/galaxy/rpc"
 )
 
 type LightEthereum struct {
@@ -103,7 +103,7 @@ func New(ctx *node.ServiceContext, config *eth.Config) (*LightEthereum, error) {
 		peers:          peers,
 		reqDist:        newRequestDistributor(peers, quitSync, &mclock.System{}),
 		accountManager: ctx.AccountManager,
-		engine:         eth.CreateConsensusEngine(ctx, chainConfig, &config.Ethash, nil, false, chainDb),
+		engine:         eth.CreateConsensusEngine(ctx, chainConfig, config, nil, false, chainDb),
 		shutdownChan:   make(chan bool),
 		networkId:      config.NetworkId,
 		bloomRequests:  make(chan chan *bloombits.Retrieval),
@@ -276,7 +276,6 @@ func (s *LightEthereum) Stop() error {
 	s.blockchain.Stop()
 	s.protocolManager.Stop()
 	s.txPool.Stop()
-	s.engine.Close()
 
 	s.eventMux.Stop()
 

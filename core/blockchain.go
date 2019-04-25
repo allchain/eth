@@ -27,22 +27,22 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/mclock"
-	"github.com/ethereum/go-ethereum/common/prque"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy/common/prque"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy/trie"
 	lru "github.com/hashicorp/golang-lru"
 )
 
@@ -1652,6 +1652,11 @@ func (bc *BlockChain) BadBlocks() []*types.Block {
 // addBadBlock adds a bad block to the bad-block LRU cache
 func (bc *BlockChain) addBadBlock(block *types.Block) {
 	bc.badBlocks.Add(block.Hash(), block)
+}
+
+// HasBadBlock returns whether the block with the hash is a bad block
+func (bc *BlockChain) HasBadBlock(hash common.Hash) bool {
+	return bc.badBlocks.Contains(hash)
 }
 
 // reportBlock logs a bad block error.

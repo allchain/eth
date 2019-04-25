@@ -28,8 +28,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/swarm/chunk"
-	"github.com/ethereum/go-ethereum/swarm/shed"
+	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy/swarm/shed"
 	"github.com/syndtr/goleveldb/leveldb"
 )
 

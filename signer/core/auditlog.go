@@ -19,10 +19,10 @@ package core
 import (
 	"context"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/internal/ethapi"
+	"github.com/galaxy/galaxy/log"
 )
 
 type AuditLogger struct {

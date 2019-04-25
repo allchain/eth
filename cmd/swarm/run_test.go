@@ -33,15 +33,15 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/internal/cmdtest"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	swarmhttp "github.com/ethereum/go-ethereum/swarm/api/http"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/accounts/keystore"
+	"github.com/galaxy/galaxy/internal/cmdtest"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy/swarm"
+	"github.com/galaxy/galaxy/swarm/api"
+	swarmhttp "github.com/galaxy/galaxy/swarm/api/http"
 )
 
 var loglevel = flag.Int("loglevel", 3, "verbosity of logs")

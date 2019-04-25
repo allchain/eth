@@ -41,23 +41,23 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/eth"
-	"github.com/ethereum/go-ethereum/eth/downloader"
-	"github.com/ethereum/go-ethereum/ethclient"
-	"github.com/ethereum/go-ethereum/ethstats"
-	"github.com/ethereum/go-ethereum/les"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/p2p/discv5"
-	"github.com/ethereum/go-ethereum/p2p/enode"
-	"github.com/ethereum/go-ethereum/p2p/nat"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/accounts/keystore"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/eth"
+	"github.com/galaxy/galaxy/eth/downloader"
+	"github.com/galaxy/galaxy/ethclient"
+	"github.com/galaxy/galaxy/ethstats"
+	"github.com/galaxy/galaxy/les"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/p2p/discv5"
+	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy/p2p/nat"
+	"github.com/galaxy/galaxy/params"
 	"golang.org/x/net/websocket"
 )
 
@@ -449,7 +449,7 @@ func (f *faucet) apiHandler(conn *websocket.Conn) {
 		case *noauthFlag:
 			username, avatar, address, err = authNoAuth(msg.URL)
 		default:
-			err = errors.New("Something funky happened, please open an issue at https://github.com/ethereum/go-ethereum/issues")
+			err = errors.New("Something funky happened, please open an issue at https://github.com/galaxy/galaxy/issues")
 		}
 		if err != nil {
 			if err = sendError(conn, err); err != nil {

@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/math"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/math"
 )
 
 // calcMemSize64 calculates the required memory size, and returns

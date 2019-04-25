@@ -26,19 +26,19 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/consensus/misc"
+	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy/rpc"
 	lru "github.com/hashicorp/golang-lru"
 	"golang.org/x/crypto/sha3"
 )
@@ -682,6 +682,11 @@ func (c *Clique) APIs(chain consensus.ChainReader) []rpc.API {
 	}}
 }
 
+// Protocol implements consensus.Engine.Protocol
+func (c *Clique) Protocol() consensus.Protocol {
+	return consensus.EthProtocol
+}
+
 // SealHash returns the hash of a block prior to it being sealed.
 func SealHash(header *types.Header) (hash common.Hash) {
 	hasher := sha3.NewLegacyKeccak256()
@@ -725,3 +730,4 @@ func encodeSigHeader(w io.Writer, header *types.Header) {
 		panic("can't encode: " + err.Error())
 	}
 }
+

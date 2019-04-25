@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/rlp"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/iterator"

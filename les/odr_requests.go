@@ -21,15 +21,15 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/light"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/light"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy/trie"
 )
 
 var (

@@ -21,13 +21,13 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/crypto"
 
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	swarm "github.com/ethereum/go-ethereum/swarm/api/client"
-	"github.com/ethereum/go-ethereum/swarm/storage/feed"
+	"github.com/galaxy/galaxy/cmd/utils"
+	swarm "github.com/galaxy/galaxy/swarm/api/client"
+	"github.com/galaxy/galaxy/swarm/storage/feed"
 	"gopkg.in/urfave/cli.v1"
 )
 

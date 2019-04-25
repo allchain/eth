@@ -21,10 +21,10 @@ import (
 	"io"
 	"os"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/rlp"
 )
 
 // errNoActiveJournal is returned if a transaction is attempted to be inserted

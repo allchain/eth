@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/swarm/api"
-	"github.com/ethereum/go-ethereum/swarm/log"
-	"github.com/ethereum/go-ethereum/swarm/sctx"
-	"github.com/ethereum/go-ethereum/swarm/spancontext"
+	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy/swarm/api"
+	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy/swarm/sctx"
+	"github.com/galaxy/galaxy/swarm/spancontext"
 	"github.com/pborman/uuid"
 )
 

@@ -28,11 +28,11 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/swarm/sctx"
-	"github.com/ethereum/go-ethereum/swarm/storage"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/swarm/sctx"
+	"github.com/galaxy/galaxy/swarm/storage"
 )
 
 func init() {

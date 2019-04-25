@@ -34,12 +34,12 @@ import (
 	"unsafe"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy/rpc"
 	"github.com/hashicorp/golang-lru/simplelru"
 )
 
@@ -708,6 +708,11 @@ func (ethash *Ethash) APIs(chain consensus.ChainReader) []rpc.API {
 			Public:    true,
 		},
 	}
+}
+
+// Protocol implements consensus.Engine.Protocol
+func (ethash *Ethash) Protocol() consensus.Protocol {
+	return consensus.EthProtocol
 }
 
 // SeedHash is the seed to use for generating a verification cache and the mining

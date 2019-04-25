@@ -21,7 +21,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
+	"github.com/galaxy/galaxy/common"
 )
 
 const (

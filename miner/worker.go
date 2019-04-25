@@ -25,15 +25,15 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/consensus"
-	"github.com/ethereum/go-ethereum/consensus/misc"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/consensus"
+	"github.com/galaxy/galaxy/consensus/misc"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/params"
 )
 
 const (
@@ -267,11 +267,25 @@ func (w *worker) pendingBlock() *types.Block {
 // start sets the running status as 1 and triggers new work submitting.
 func (w *worker) start() {
 	atomic.StoreInt32(&w.running, 1)
+	if istanbul, ok := w.engine.(consensus.Istanbul); ok {
+		err := istanbul.Start(w.chain, w.chain.CurrentBlock, w.chain.HasBadBlock)
+		if err != nil {
+			panic(err)
+		}
+	}
 	w.startCh <- struct{}{}
 }
 
 // stop sets the running status as 0.
 func (w *worker) stop() {
+	if atomic.LoadInt32(&w.running) == 1 {
+		if istanbul, ok := w.engine.(consensus.Istanbul); ok {
+			err := istanbul.Stop()
+			if err != nil {
+				panic(err)
+			}
+		}
+	}
 	atomic.StoreInt32(&w.running, 0)
 }
 

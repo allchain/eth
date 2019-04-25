@@ -19,6 +19,7 @@ package types
 
 import (
 	"encoding/binary"
+	"fmt"
 	"io"
 	"math/big"
 	"reflect"
@@ -26,9 +27,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/rlp"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy/rlp"
 	"golang.org/x/crypto/sha3"
 )
 
@@ -100,6 +101,45 @@ type headerMarshaling struct {
 // RLP encoding.
 func (h *Header) Hash() common.Hash {
 	return rlpHash(h)
+}
+
+func (h *Header) SigHash() common.Hash {
+	return rlpHash([]interface{}{
+		h.ParentHash,
+		h.UncleHash,
+		h.Coinbase,
+		h.Root,
+		h.TxHash,
+		h.ReceiptHash,
+		h.Bloom,
+		h.Difficulty,
+		h.Number,
+		h.GasLimit,
+		h.GasUsed,
+		h.Time,
+		h.Extra[:len(h.Extra)-65], // Yes, this will panic if extra is too short
+		h.MixDigest,
+		h.Nonce,
+	})
+}
+
+// HashNoNonce returns the hash which is used as input for the proof-of-work search.
+func (h *Header) HashNoNonce() common.Hash {
+	return rlpHash([]interface{}{
+		h.ParentHash,
+		h.UncleHash,
+		h.Coinbase,
+		h.Root,
+		h.TxHash,
+		h.ReceiptHash,
+		h.Bloom,
+		h.Difficulty,
+		h.Number,
+		h.GasLimit,
+		h.GasUsed,
+		h.Time,
+		h.Extra,
+	})
 }
 
 var headerSize = common.StorageSize(reflect.TypeOf(Header{}).Size())
@@ -365,6 +405,19 @@ func (b *Block) Hash() common.Hash {
 	v := b.header.Hash()
 	b.hash.Store(v)
 	return v
+}
+
+func (b *Block) String() string {
+	str := fmt.Sprintf(`Block(#%v): Size: %v {
+MinerHash: %x
+%v
+Transactions:
+%v
+Uncles:
+%v
+}
+`, b.Number(), b.Size(), b.header.HashNoNonce(), b.header, b.transactions, b.uncles)
+	return str
 }
 
 type Blocks []*Block

@@ -17,14 +17,15 @@
 package node
 
 import (
+	"crypto/ecdsa"
 	"reflect"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/event"
-	"github.com/ethereum/go-ethereum/p2p"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/galaxy/galaxy/accounts"
+	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy/rpc"
 )
 
 // ServiceContext is a collection of service independent options inherited from
@@ -66,6 +67,11 @@ func (ctx *ServiceContext) Service(service interface{}) error {
 		return nil
 	}
 	return ErrServiceUnknown
+}
+
+// NodeKey returns node key from config
+func (ctx *ServiceContext) NodeKey() *ecdsa.PrivateKey {
+	return ctx.config.NodeKey()
 }
 
 // ExtRPCEnabled returns the indicator whether node enables the external

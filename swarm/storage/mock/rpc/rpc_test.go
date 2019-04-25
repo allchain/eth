@@ -19,9 +19,9 @@ package rpc
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/mem"
-	"github.com/ethereum/go-ethereum/swarm/storage/mock/test"
+	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy/swarm/storage/mock/mem"
+	"github.com/galaxy/galaxy/swarm/storage/mock/test"
 )
 
 // TestDBStore is running test for a GlobalStore

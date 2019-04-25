@@ -25,12 +25,12 @@ import (
 	"encoding/binary"
 	"strings"
 
-	"github.com/ethereum/go-ethereum/accounts/abi/bind"
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/contracts/ens/contract"
-	"github.com/ethereum/go-ethereum/contracts/ens/fallback_contract"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
+	"github.com/galaxy/galaxy/accounts/abi/bind"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/contracts/ens/contract"
+	"github.com/galaxy/galaxy/contracts/ens/fallback_contract"
+	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy/crypto"
 )
 
 var (

@@ -29,10 +29,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/params"
 )
 
 // makeGenesis creates a new genesis struct based on some user input.

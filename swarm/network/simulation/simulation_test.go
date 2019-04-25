@@ -24,10 +24,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/p2p/simulations"
-	"github.com/ethereum/go-ethereum/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy/p2p/simulations"
+	"github.com/galaxy/galaxy/p2p/simulations/adapters"
 	"github.com/mattn/go-colorable"
 )
 

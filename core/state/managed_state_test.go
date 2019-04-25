@@ -19,8 +19,8 @@ package state
 import (
 	"testing"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
+	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy/core/rawdb"
 )
 
 var addr = common.BytesToAddress([]byte("test"))
