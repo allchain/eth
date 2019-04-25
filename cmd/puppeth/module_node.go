@@ -26,8 +26,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // nodeDockerfile is the Dockerfile required to run an Ethereum node.

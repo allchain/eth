@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

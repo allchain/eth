@@ -3,10 +3,10 @@ package simulations
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/enr"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // NoopService is the service that does not do anything

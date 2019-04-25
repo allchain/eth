@@ -36,14 +36,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/contracts/chequebook/contract"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/services/swap/swap"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/contracts/chequebook/contract"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/services/swap/swap"
 )
 
 // TODO(zelig): watch peer solvency and notify of bouncing cheques

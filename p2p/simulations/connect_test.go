@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

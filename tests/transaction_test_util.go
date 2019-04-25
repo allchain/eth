@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // TransactionTest checks RLP decoding and sender derivation of transactions.

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // Forks table defines supported forks and their chain config.

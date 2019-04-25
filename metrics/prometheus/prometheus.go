@@ -22,8 +22,8 @@ import (
 	"net/http"
 	"sort"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 // Handler returns an HTTP handler which dump metrics in Prometheus format.

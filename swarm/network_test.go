@@ -28,16 +28,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/network/simulation"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/network/simulation"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 	"github.com/mattn/go-colorable"
 )
 

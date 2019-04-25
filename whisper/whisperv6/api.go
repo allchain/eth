@@ -24,12 +24,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // List of errors

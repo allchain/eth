@@ -22,9 +22,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/nat"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/nat"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 const (

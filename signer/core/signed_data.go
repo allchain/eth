@@ -29,15 +29,15 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/consensus/clique"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/consensus/clique"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 type SigFormat struct {
@@ -561,7 +561,7 @@ func (api *SignerAPI) EcRecover(ctx context.Context, data hexutil.Bytes, sig hex
 	// Note, the signature must conform to the secp256k1 curve R, S and V values, where
 	// the V value must be be 27 or 28 for legacy reasons.
 	//
-	// https://github.com/galaxy/galaxy/wiki/Management-APIs#personal_ecRecover
+	// https://github.com/galaxy/galaxy-eth/wiki/Management-APIs#personal_ecRecover
 	if len(sig) != 65 {
 		return common.Address{}, fmt.Errorf("signature must be 65 bytes long")
 	}

@@ -23,11 +23,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/eth"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/les/flowcontrol"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/eth"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/les/flowcontrol"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 const makeCostStats = false // make request cost statistics during operation

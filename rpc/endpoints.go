@@ -19,7 +19,7 @@ package rpc
 import (
 	"net"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // StartHTTPEndpoint starts the HTTP RPC endpoint, configured with cors/vhosts/modules

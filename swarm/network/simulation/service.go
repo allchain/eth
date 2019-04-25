@@ -17,9 +17,9 @@
 package simulation
 
 import (
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
 )
 
 // Service returns a single Service by name on a particular node

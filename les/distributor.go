@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/mclock"
 )
 
 // requestDistributor implements a mechanism that distributes requests to

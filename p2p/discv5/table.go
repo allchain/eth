@@ -29,7 +29,7 @@ import (
 	"net"
 	"sort"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 const (

@@ -23,9 +23,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/api/client"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

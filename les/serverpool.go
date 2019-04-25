@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/discv5"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/discv5"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 const (

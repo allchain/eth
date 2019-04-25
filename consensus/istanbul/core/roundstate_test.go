@@ -21,8 +21,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 func newTestRoundState(view *istanbul.View, validatorSet istanbul.ValidatorSet) *roundState {

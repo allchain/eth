@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

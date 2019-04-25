@@ -16,7 +16,7 @@
 
 package bind
 
-import "github.com/galaxy/galaxy/accounts/abi"
+import "github.com/galaxy/galaxy-eth/accounts/abi"
 
 // tmplData is the data structure required to fill the binding template.
 type tmplData struct {
@@ -68,12 +68,12 @@ import (
 	"math/big"
 	"strings"
 
-	ethereum "github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/event"
+	ethereum "github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

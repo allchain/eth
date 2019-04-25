@@ -22,7 +22,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 // asymmetrical key exchange between two directly connected peers

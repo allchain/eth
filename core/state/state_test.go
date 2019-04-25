@@ -21,10 +21,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
 	checker "gopkg.in/check.v1"
 )
 

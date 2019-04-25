@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
 )
 
 // TestDB_SubscribePull uploads some chunks before and after

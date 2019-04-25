@@ -22,9 +22,9 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 	"github.com/pborman/uuid"
 
 	cli "gopkg.in/urfave/cli.v1"

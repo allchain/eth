@@ -26,7 +26,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 type storedCredential struct {

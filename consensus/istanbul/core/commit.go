@@ -19,8 +19,8 @@ package core
 import (
 	"reflect"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 func (c *core) sendCommit() {

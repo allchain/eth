@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 var (

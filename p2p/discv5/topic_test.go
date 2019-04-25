@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/mclock"
 )
 
 func TestTopicRadius(t *testing.T) {

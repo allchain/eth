@@ -29,8 +29,8 @@ import (
 
 	"github.com/cespare/cp"
 	"github.com/davecgh/go-spew/spew"
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 var (

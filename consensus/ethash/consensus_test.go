@@ -23,9 +23,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 type diffTest struct {

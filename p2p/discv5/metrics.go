@@ -1,6 +1,6 @@
 package discv5
 
-import "github.com/galaxy/galaxy/metrics"
+import "github.com/galaxy/galaxy-eth/metrics"
 
 var (
 	ingressTrafficMeter = metrics.NewRegisteredMeter("discv5/InboundTraffic", nil)

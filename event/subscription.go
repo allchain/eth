@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/mclock"
 )
 
 // Subscription represents a stream of events. The carrier of the events is typically a

@@ -24,9 +24,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/swarm/storage"
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
 )
 
 func areEqualJSON(s1, s2 string) (bool, error) {

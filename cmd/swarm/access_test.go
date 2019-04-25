@@ -31,12 +31,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/crypto/ecies"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/api"
-	swarmapi "github.com/galaxy/galaxy/swarm/api/client"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/crypto/ecies"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	swarmapi "github.com/galaxy/galaxy-eth/swarm/api/client"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -30,7 +30,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 var (

@@ -24,11 +24,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/consensus/istanbul/validator"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul/validator"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 func TestSign(t *testing.T) {

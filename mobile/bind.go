@@ -22,10 +22,10 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // Signer is an interaface defining the callback when a contract requires a

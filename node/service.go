@@ -20,12 +20,12 @@ import (
 	"crypto/ecdsa"
 	"reflect"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // ServiceContext is a collection of service independent options inherited from

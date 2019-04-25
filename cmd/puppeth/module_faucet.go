@@ -26,8 +26,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // faucetDockerfile is the Dockerfile required to build a faucet container to

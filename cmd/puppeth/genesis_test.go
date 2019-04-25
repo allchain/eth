@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/galaxy/galaxy/core"
+	"github.com/galaxy/galaxy-eth/core"
 )
 
 // Tests the go-ethereum to Aleth chainspec conversion for the Stureby testnet.

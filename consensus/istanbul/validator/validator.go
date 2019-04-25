@@ -17,8 +17,8 @@
 package validator
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 func New(addr common.Address) istanbul.Validator {

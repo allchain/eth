@@ -19,8 +19,8 @@ package runtime_test
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/vm/runtime"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/vm/runtime"
 )
 
 func ExampleExecute() {

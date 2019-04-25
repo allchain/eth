@@ -22,12 +22,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // SignerFn is a signer function callback when a contract requires a method to

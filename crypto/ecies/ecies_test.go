@@ -40,7 +40,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 var dumpEnc bool

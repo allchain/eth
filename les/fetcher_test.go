@@ -6,11 +6,11 @@ import (
 
 	"net"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
 )
 
 func TestFetcherULCPeerSelector(t *testing.T) {

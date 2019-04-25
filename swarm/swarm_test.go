@@ -28,10 +28,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/rpc"
-	"github.com/galaxy/galaxy/swarm/api"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/rpc"
+	"github.com/galaxy/galaxy-eth/swarm/api"
 )
 
 // TestNewSwarm validates Swarm fields in repsect to the provided configuration.

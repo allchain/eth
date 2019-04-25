@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 // Node represents a host on the network.

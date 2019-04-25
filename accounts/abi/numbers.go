@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"reflect"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
 )
 
 var (

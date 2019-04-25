@@ -19,7 +19,7 @@
 package downloader
 
 import (
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 var (

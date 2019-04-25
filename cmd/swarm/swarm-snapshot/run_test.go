@@ -22,7 +22,7 @@ import (
 	"testing"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/galaxy/galaxy/internal/cmdtest"
+	"github.com/galaxy/galaxy-eth/internal/cmdtest"
 )
 
 func init() {

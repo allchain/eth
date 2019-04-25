@@ -26,13 +26,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/params"
 	lru "github.com/hashicorp/golang-lru"
 )
 

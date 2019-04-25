@@ -34,8 +34,8 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 type allocItem struct{ Addr, Balance *big.Int }

@@ -19,7 +19,7 @@ package ethapi
 import (
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 type AddrLocker struct {

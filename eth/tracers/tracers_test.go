@@ -27,17 +27,17 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/core/vm"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/tests"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/core/vm"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/tests"
 )
 
 // To generate a new callTracer test, copy paste the makeTest method below into

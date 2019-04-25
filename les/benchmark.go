@@ -23,17 +23,17 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/les/flowcontrol"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/les/flowcontrol"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // requestBenchmark is an interface for different randomized request generators

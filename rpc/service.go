@@ -27,7 +27,7 @@ import (
 	"unicode"
 	"unicode/utf8"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 var (

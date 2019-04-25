@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 func manifest(paths ...string) (manifestReader storage.LazySectionReader) {

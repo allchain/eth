@@ -16,7 +16,7 @@
 
 package storage
 
-import "github.com/galaxy/galaxy/swarm/chunk"
+import "github.com/galaxy/galaxy-eth/swarm/chunk"
 
 const (
 	ErrInit = iota

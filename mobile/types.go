@@ -23,10 +23,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/rlp"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/rlp"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 // A Nonce is a 64-bit hash which proves (combined with the mix-hash) that

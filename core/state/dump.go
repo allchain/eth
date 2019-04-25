@@ -20,9 +20,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/trie"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/trie"
 )
 
 type DumpAccount struct {

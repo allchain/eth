@@ -23,8 +23,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
 	"github.com/mattn/go-colorable"
 )
 

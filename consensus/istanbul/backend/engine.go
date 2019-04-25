@@ -25,17 +25,17 @@ import (
 
 	"golang.org/x/crypto/sha3"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	istanbulCore "github.com/galaxy/galaxy/consensus/istanbul/core"
-	"github.com/galaxy/galaxy/consensus/istanbul/validator"
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	istanbulCore "github.com/galaxy/galaxy-eth/consensus/istanbul/core"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul/validator"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/rpc"
 	lru "github.com/hashicorp/golang-lru"
 )
 

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 // Event is an event potentially triggered by the EVM's LOG mechanism. The Event

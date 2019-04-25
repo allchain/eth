@@ -20,8 +20,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 var (

@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // Genesis hashes to enforce below configs on.

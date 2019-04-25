@@ -36,7 +36,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 const (

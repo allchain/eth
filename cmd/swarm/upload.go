@@ -29,10 +29,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/log"
-	swarm "github.com/galaxy/galaxy/swarm/api/client"
+	"github.com/galaxy/galaxy-eth/log"
+	swarm "github.com/galaxy/galaxy-eth/swarm/api/client"
 
-	"github.com/galaxy/galaxy/cmd/utils"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

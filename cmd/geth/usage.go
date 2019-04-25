@@ -24,8 +24,8 @@ import (
 
 	"strings"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/internal/debug"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/internal/debug"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

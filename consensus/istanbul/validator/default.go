@@ -22,8 +22,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 type defaultValidator struct {

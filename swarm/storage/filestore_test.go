@@ -24,7 +24,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 )
 
 const testDataSize = 0x0001000

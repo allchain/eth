@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 func TestMessageSetWithPreprepare(t *testing.T) {

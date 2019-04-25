@@ -21,11 +21,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/swarm/log"
-	"github.com/galaxy/galaxy/swarm/state"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/state"
 )
 
 /*

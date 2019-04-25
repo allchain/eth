@@ -25,17 +25,17 @@ import (
 	"testing"
 	"time"
 
-	ethereum "github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/core/bloombits"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rpc"
+	ethereum "github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/core/bloombits"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 type testBackend struct {

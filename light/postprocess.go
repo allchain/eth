@@ -24,16 +24,16 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/bitutil"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/trie"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/bitutil"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/trie"
 )
 
 // IndexerConfig includes a set of configs for chain indexers.

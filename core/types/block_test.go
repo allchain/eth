@@ -23,8 +23,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // from bcValidBlockTest.json, "SimpleTx"

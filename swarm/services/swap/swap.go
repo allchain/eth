@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/contracts/chequebook"
-	"github.com/galaxy/galaxy/contracts/chequebook/contract"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/swarm/log"
-	"github.com/galaxy/galaxy/swarm/services/swap/swap"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/contracts/chequebook"
+	"github.com/galaxy/galaxy-eth/contracts/chequebook/contract"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/services/swap/swap"
 )
 
 // SwAP       Swarm Accounting Protocol with

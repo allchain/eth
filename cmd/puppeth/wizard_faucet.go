@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // deployFaucet queries the user for various input on deploying a faucet, after

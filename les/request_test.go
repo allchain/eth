@@ -21,11 +21,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/light"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/light"
 )
 
 var testBankSecureTrieKey = secAddr(testBankAddress)

@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 type bytesBacked interface {

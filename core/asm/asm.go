@@ -21,7 +21,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy-eth/core/vm"
 )
 
 // Iterator for disassembled EVM instructions

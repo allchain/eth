@@ -19,7 +19,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy-eth/core/vm"
 )
 
 func TestVM(t *testing.T) {

@@ -21,8 +21,8 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/log"
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
 )
 
 type Data struct {

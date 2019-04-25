@@ -3,9 +3,9 @@ InstallDir "$InstDir"
 OutFile "${OUTPUTFILE}" # set through command line arguments
 
 # Links for "Add/Remove Programs"
-!define HELPURL "https://github.com/galaxy/galaxy/issues"
-!define UPDATEURL "https://github.com/galaxy/galaxy/releases"
-!define ABOUTURL "https://github.com/galaxy/galaxy#ethereum-go"
+!define HELPURL "https://github.com/galaxy/galaxy-eth/issues"
+!define UPDATEURL "https://github.com/galaxy/galaxy-eth/releases"
+!define ABOUTURL "https://github.com/galaxy/galaxy-eth#ethereum-go"
 !define /date NOW "%Y%m%d"
 
 PageEx license

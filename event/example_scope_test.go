@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // This example demonstrates how SubscriptionScope can be used to control the lifetime of

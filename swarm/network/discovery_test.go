@@ -27,12 +27,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/protocols"
-	p2ptest "github.com/galaxy/galaxy/p2p/testing"
-	"github.com/galaxy/galaxy/swarm/pot"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/protocols"
+	p2ptest "github.com/galaxy/galaxy-eth/p2p/testing"
+	"github.com/galaxy/galaxy-eth/swarm/pot"
 )
 
 /***

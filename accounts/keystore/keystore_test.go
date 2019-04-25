@@ -26,9 +26,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 var testSigData = make([]byte, 32)

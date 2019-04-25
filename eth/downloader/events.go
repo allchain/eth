@@ -16,7 +16,7 @@
 
 package downloader
 
-import "github.com/galaxy/galaxy/core/types"
+import "github.com/galaxy/galaxy-eth/core/types"
 
 type DoneEvent struct {
 	Latest *types.Header

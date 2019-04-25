@@ -23,10 +23,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/crypto/secp256k1"
-	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/crypto/secp256k1"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
 )
 
 // node represents a host on the network.

@@ -20,11 +20,11 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // Prove constructs a merkle proof for key. The result contains all encoded nodes

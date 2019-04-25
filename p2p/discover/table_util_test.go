@@ -23,8 +23,8 @@ import (
 	"net"
 	"sync"
 
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/enr"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
 )
 
 var nullNode *enode.Node

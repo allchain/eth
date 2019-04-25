@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // decodedCallData is an internal type to represent a method call parsed according

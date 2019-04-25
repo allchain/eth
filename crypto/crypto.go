@@ -28,9 +28,9 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

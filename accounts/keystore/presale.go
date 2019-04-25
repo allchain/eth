@@ -25,8 +25,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/crypto"
 	"github.com/pborman/uuid"
 	"golang.org/x/crypto/pbkdf2"
 )

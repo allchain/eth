@@ -25,14 +25,14 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/consensus/misc"
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/consensus/misc"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

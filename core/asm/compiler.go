@@ -22,8 +22,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/core/vm"
 )
 
 // Compiler contains information about the parsed source

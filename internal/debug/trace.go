@@ -23,7 +23,7 @@ import (
 	"os"
 	"runtime/trace"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // StartGoTrace turns on tracing, writing to the given file.

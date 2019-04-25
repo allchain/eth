@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

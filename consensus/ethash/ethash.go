@@ -34,12 +34,12 @@ import (
 	"unsafe"
 
 	mmap "github.com/edsrzf/mmap-go"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"github.com/hashicorp/golang-lru/simplelru"
 )
 

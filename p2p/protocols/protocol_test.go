@@ -25,13 +25,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	p2ptest "github.com/galaxy/galaxy/p2p/testing"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	p2ptest "github.com/galaxy/galaxy-eth/p2p/testing"
 )
 
 // handshake message type

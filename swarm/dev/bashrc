@@ -1,4 +1,4 @@
-export ROOT="${GOPATH}/src/github.com/galaxy/galaxy"
+export ROOT="${GOPATH}/src/github.com/galaxy/galaxy-eth"
 export PATH="${ROOT}/swarm/dev/bin:${PATH}"
 
 cd "${ROOT}/swarm/dev"

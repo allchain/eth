@@ -20,7 +20,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 func TestTransaction(t *testing.T) {

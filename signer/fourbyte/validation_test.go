@@ -20,9 +20,9 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/signer/core"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/signer/core"
 )
 
 func mixAddr(a string) (*common.MixedcaseAddress, error) {

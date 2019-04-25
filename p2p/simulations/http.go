@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"github.com/julienschmidt/httprouter"
 	"golang.org/x/net/websocket"
 )

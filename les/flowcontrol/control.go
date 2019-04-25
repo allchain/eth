@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 const (

@@ -24,7 +24,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 func TestPack(t *testing.T) {

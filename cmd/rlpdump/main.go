@@ -26,7 +26,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 var (

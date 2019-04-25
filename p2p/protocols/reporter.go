@@ -20,8 +20,8 @@ import (
 	"encoding/binary"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
 
 	"github.com/syndtr/goleveldb/leveldb"
 )

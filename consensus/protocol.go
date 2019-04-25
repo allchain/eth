@@ -18,8 +18,8 @@
 package consensus
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // Constants to match up protocol versions and messages

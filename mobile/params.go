@@ -21,9 +21,9 @@ package geth
 import (
 	"encoding/json"
 
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/p2p/discv5"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/p2p/discv5"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // MainnetGenesis returns the JSON spec to use for the main Ethereum network. It

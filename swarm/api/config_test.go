@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 func TestConfig(t *testing.T) {

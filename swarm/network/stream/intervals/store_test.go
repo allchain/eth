@@ -19,7 +19,7 @@ package intervals
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/state"
+	"github.com/galaxy/galaxy-eth/swarm/state"
 )
 
 // TestInmemoryStore tests basic functionality of InmemoryStore.

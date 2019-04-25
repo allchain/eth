@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // Tests for the decoding of the example ENS

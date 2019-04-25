@@ -20,8 +20,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // Backend provides application specific functions for Istanbul core

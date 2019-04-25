@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 const (

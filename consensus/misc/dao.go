@@ -21,9 +21,9 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 var (

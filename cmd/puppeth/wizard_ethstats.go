@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // deployEthstats queries the user for various input on deploying an ethstats

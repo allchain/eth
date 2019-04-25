@@ -23,9 +23,9 @@ import (
 	mrand "math/rand"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 func generateMessageParams() (*MessageParams, error) {

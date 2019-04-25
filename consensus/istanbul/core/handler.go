@@ -17,9 +17,9 @@
 package core
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // Start implements core.Engine.Start

@@ -20,10 +20,10 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
 	"golang.org/x/crypto/sha3"
 )
 

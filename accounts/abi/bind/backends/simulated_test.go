@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"testing"
 
-	ethereum "github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/accounts/abi/bind/backends"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
+	ethereum "github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind/backends"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 func TestSimulatedBackend(t *testing.T) {

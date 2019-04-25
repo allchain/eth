@@ -20,9 +20,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // SampleService is a trivial network service that can be attached to a node for

@@ -26,7 +26,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 	"github.com/mohae/deepcopy"
 	"github.com/rjeczalik/notify"
 )

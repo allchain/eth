@@ -20,7 +20,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/api"
 )
 
 const (

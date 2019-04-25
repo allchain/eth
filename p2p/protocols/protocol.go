@@ -38,12 +38,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/swarm/spancontext"
-	"github.com/galaxy/galaxy/swarm/tracing"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/swarm/spancontext"
+	"github.com/galaxy/galaxy-eth/swarm/tracing"
 	opentracing "github.com/opentracing/opentracing-go"
 )
 

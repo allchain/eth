@@ -22,11 +22,11 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/internal/ethapi"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/internal/ethapi"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 var maxPrice = big.NewInt(500 * params.GWei)

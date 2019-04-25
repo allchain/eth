@@ -28,8 +28,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/swarm/storage/mock"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock"
 )
 
 // GlobalStore stores all chunk data and also keys and node addresses relations.

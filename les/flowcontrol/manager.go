@@ -22,8 +22,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/common/prque"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/prque"
 )
 
 // cmNodeFields are ClientNode fields used by the client manager

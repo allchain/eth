@@ -21,8 +21,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 func TestHeaderHash(t *testing.T) {

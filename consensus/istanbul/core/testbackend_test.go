@@ -21,13 +21,13 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/consensus/istanbul/validator"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/event"
-	elog "github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul/validator"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/event"
+	elog "github.com/galaxy/galaxy-eth/log"
 )
 
 var testLogger = elog.New()

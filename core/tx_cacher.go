@@ -19,7 +19,7 @@ package core
 import (
 	"runtime"
 
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // senderCacher is a concurrent transaction sender recoverer and cacher.

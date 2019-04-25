@@ -19,7 +19,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // ensureVirtualHost checks whether a reverse-proxy is running on the specified

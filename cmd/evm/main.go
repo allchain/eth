@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"os"
 
-	"github.com/galaxy/galaxy/cmd/utils"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
 	"gopkg.in/urfave/cli.v1"
 )
 

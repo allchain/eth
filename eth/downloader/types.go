@@ -19,7 +19,7 @@ package downloader
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // peerDropFn is a callback type for dropping a peer detected as malicious.

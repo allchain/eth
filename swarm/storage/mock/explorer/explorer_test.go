@@ -30,10 +30,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/swarm/storage/mock"
-	"github.com/galaxy/galaxy/swarm/storage/mock/db"
-	"github.com/galaxy/galaxy/swarm/storage/mock/mem"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock/db"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock/mem"
 )
 
 // TestHandler_memGlobalStore runs a set of tests

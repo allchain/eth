@@ -21,9 +21,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/galaxy/galaxy/internal/ethapi"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/internal/ethapi"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 type StdIOUI struct {

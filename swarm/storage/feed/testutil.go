@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 const (

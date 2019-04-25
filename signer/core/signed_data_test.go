@@ -23,10 +23,10 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/signer/core"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/signer/core"
 )
 
 var typesStandard = core.Types{

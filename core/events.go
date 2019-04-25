@@ -17,8 +17,8 @@
 package core
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // NewTxsEvent is posted when a batch of transactions enter the transaction pool.

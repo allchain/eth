@@ -23,17 +23,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/core/vm"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/ethdb/memorydb"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/core/vm"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/ethdb/memorydb"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // So we can deterministically seed different blockchains
@@ -1420,7 +1420,7 @@ func TestEIP161AccountRemoval(t *testing.T) {
 // tests that under weird reorg conditions the blockchain and its internal header-
 // chain return the same latest block/header.
 //
-// https://github.com/galaxy/galaxy/pull/15941
+// https://github.com/galaxy/galaxy-eth/pull/15941
 func TestBlockchainHeaderchainReorgConsistency(t *testing.T) {
 	// Generate a canonical chain to act as the main dataset
 	engine := ethash.NewFaker()
@@ -1679,8 +1679,8 @@ func BenchmarkBlockChain_1x1000Executions(b *testing.B) {
 // overtake the 'canon' chain until after it's passed canon by about 200 blocks.
 //
 // Details at:
-//  - https://github.com/galaxy/galaxy/issues/18977
-//  - https://github.com/galaxy/galaxy/pull/18988
+//  - https://github.com/galaxy/galaxy-eth/issues/18977
+//  - https://github.com/galaxy/galaxy-eth/pull/18988
 func TestLowDiffLongChain(t *testing.T) {
 	// Generate a canonical chain to act as the main dataset
 	engine := ethash.NewFaker()

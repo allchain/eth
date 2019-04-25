@@ -23,15 +23,15 @@ import (
 	"os"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/api"
-	swarm "github.com/galaxy/galaxy/swarm/api/client"
-	swarmhttp "github.com/galaxy/galaxy/swarm/api/http"
-	"github.com/galaxy/galaxy/swarm/storage/feed"
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	swarm "github.com/galaxy/galaxy-eth/swarm/api/client"
+	swarmhttp "github.com/galaxy/galaxy-eth/swarm/api/http"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 )
 
 func TestCLIFeedUpdate(t *testing.T) {

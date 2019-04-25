@@ -20,8 +20,8 @@ package rawdb
 import (
 	"encoding/binary"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 // The fields below define the low level database schema prefixing.

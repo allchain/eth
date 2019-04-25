@@ -21,8 +21,8 @@ package geth
 import (
 	"errors"
 
-	ethereum "github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/common"
+	ethereum "github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // Subscription represents an event subscription where events are

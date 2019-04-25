@@ -29,10 +29,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/storage"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 	colorable "github.com/mattn/go-colorable"
 )
 

@@ -19,9 +19,9 @@ package protocols
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 //dummy Balance implementation

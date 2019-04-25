@@ -23,10 +23,10 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/vm"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/tests"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/vm"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/tests"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

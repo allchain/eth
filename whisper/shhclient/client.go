@@ -19,10 +19,10 @@ package shhclient
 import (
 	"context"
 
-	"github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/rpc"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/rpc"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 // Client defines typed wrappers for the Whisper v6 RPC API.

@@ -24,7 +24,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 var (

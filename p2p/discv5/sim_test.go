@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // In this test, nodes try to randomly resolve each other.

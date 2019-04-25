@@ -21,7 +21,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 const (

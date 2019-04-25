@@ -26,12 +26,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/eth"
-	"github.com/galaxy/galaxy/internal/jsre"
-	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/eth"
+	"github.com/galaxy/galaxy-eth/internal/jsre"
+	"github.com/galaxy/galaxy-eth/node"
 )
 
 const (

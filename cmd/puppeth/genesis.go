@@ -23,12 +23,12 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	math2 "github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	math2 "github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // alethGenesisSpec represents the genesis specification format used by the

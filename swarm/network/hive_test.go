@@ -22,10 +22,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	p2ptest "github.com/galaxy/galaxy/p2p/testing"
-	"github.com/galaxy/galaxy/swarm/state"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	p2ptest "github.com/galaxy/galaxy-eth/p2p/testing"
+	"github.com/galaxy/galaxy-eth/swarm/state"
 )
 
 func newHiveTester(params *HiveParams, n int, store state.Store) (*bzzTester, *Hive, error) {

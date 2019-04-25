@@ -27,7 +27,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/p2p/simulations"
+	"github.com/galaxy/galaxy-eth/p2p/simulations"
 )
 
 // TestSnapshotCreate is a high level e2e test that tests for snapshot generation.

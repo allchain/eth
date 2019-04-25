@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 	"golang.org/x/crypto/sha3"
 )
 

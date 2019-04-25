@@ -25,13 +25,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/rpc"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/rpc"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 const (

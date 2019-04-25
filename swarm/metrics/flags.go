@@ -19,10 +19,10 @@ package metrics
 import (
 	"time"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	gethmetrics "github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/metrics/influxdb"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	gethmetrics "github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/metrics/influxdb"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

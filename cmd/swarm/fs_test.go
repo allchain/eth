@@ -29,8 +29,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 type testFile struct {

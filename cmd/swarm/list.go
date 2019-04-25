@@ -22,8 +22,8 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	swarm "github.com/galaxy/galaxy/swarm/api/client"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	swarm "github.com/galaxy/galaxy-eth/swarm/api/client"
 	"gopkg.in/urfave/cli.v1"
 )
 

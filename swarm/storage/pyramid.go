@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/chunk"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 /*

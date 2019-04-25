@@ -21,9 +21,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // deployNode creates a new node configuration based on some user input.

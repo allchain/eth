@@ -27,10 +27,10 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/rpc"
-	"github.com/galaxy/galaxy/swarm"
-	"github.com/galaxy/galaxy/swarm/api"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/rpc"
+	"github.com/galaxy/galaxy-eth/swarm"
+	"github.com/galaxy/galaxy-eth/swarm/api"
 )
 
 func TestConfigDump(t *testing.T) {

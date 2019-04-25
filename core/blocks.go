@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/galaxy/galaxy/common"
+import "github.com/galaxy/galaxy-eth/common"
 
 // BadHashes represent a set of manually tracked bad hashes (usually hard forks)
 var BadHashes = map[common.Hash]bool{

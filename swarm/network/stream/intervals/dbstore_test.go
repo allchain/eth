@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/state"
+	"github.com/galaxy/galaxy-eth/swarm/state"
 )
 
 // TestDBStore tests basic functionality of DBStore.

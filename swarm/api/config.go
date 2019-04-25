@@ -23,16 +23,16 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/contracts/ens"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/swarm/network"
-	"github.com/galaxy/galaxy/swarm/pss"
-	"github.com/galaxy/galaxy/swarm/services/swap"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/contracts/ens"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/swarm/network"
+	"github.com/galaxy/galaxy-eth/swarm/pss"
+	"github.com/galaxy/galaxy-eth/swarm/services/swap"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 const (

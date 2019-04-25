@@ -23,9 +23,9 @@ import (
 	"errors"
 	"time"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/protocols"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/protocols"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 // Generic ping protocol implementation for

@@ -22,7 +22,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/storage/mock/mem"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock/mem"
 )
 
 // TestHandler_CORSOrigin validates that the correct Access-Control-Allow-Origin

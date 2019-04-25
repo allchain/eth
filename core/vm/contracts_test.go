@@ -21,7 +21,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // precompiledTest defines the input/output pairs for precompiled contract tests.

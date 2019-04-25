@@ -21,10 +21,10 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p/enr"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

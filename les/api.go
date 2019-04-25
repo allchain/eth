@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 var (

@@ -19,10 +19,10 @@ package core
 import (
 	"container/list"
 
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // Implement our EthTest Manager

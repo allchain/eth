@@ -20,9 +20,9 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/prque"
-	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/prque"
+	"github.com/galaxy/galaxy-eth/ethdb"
 )
 
 // ErrNotRequested is returned by the trie sync when it's requested to process a

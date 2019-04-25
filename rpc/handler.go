@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // handler handles JSON-RPC messages. There is one handler per connection. Note that

@@ -24,10 +24,10 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/metrics/exp"
 	"github.com/fjl/memsize/memsizeui"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/metrics/exp"
 	colorable "github.com/mattn/go-colorable"
 	"github.com/mattn/go-isatty"
 	"gopkg.in/urfave/cli.v1"

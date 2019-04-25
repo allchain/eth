@@ -19,12 +19,12 @@ package core
 import (
 	"sync/atomic"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/core/vm"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/core/vm"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // statePrefetcher is a basic Prefetcher, which blindly executes a block on top

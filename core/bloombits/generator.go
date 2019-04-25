@@ -19,7 +19,7 @@ package bloombits
 import (
 	"errors"
 
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 var (

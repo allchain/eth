@@ -23,12 +23,12 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // Constants to match up protocol versions and messages

@@ -30,8 +30,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // Tests that the account management snippets work correctly.

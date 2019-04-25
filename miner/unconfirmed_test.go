@@ -19,8 +19,8 @@ package miner
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // noopChainRetriever is an implementation of headerRetriever that always

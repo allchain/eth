@@ -5,7 +5,7 @@ package whisperv6
 import (
 	"encoding/json"
 
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 var _ = (*messageOverride)(nil)

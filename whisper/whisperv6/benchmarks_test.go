@@ -20,7 +20,7 @@ import (
 	"crypto/sha256"
 	"testing"
 
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/crypto"
 	"golang.org/x/crypto/pbkdf2"
 )
 

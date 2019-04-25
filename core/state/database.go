@@ -19,9 +19,9 @@ package state
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/trie"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/trie"
 	lru "github.com/hashicorp/golang-lru"
 )
 

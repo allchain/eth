@@ -21,8 +21,8 @@ import (
 	"time"
 
 	"github.com/elastic/gosigar"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/p2p"
 )
 
 // meterCollector returns a function, which retrieves the count of a specific meter.

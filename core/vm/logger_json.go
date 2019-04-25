@@ -22,8 +22,8 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
 )
 
 type JSONLogger struct {

@@ -20,17 +20,17 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 /*
 http roundtripper to register for bzz url scheme
-see https://github.com/galaxy/galaxy/issues/2040
+see https://github.com/galaxy/galaxy-eth/issues/2040
 Usage:
 
 import (
- "github.com/galaxy/galaxy/common/httpclient"
- "github.com/galaxy/galaxy/swarm/api/http"
+ "github.com/galaxy/galaxy-eth/common/httpclient"
+ "github.com/galaxy/galaxy-eth/swarm/api/http"
 )
 client := httpclient.New()
 // for (private) swarm proxy running locally

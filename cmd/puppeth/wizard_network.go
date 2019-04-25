@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // manageServers displays a list of servers the user can disconnect from, and an

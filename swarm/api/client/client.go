@@ -37,11 +37,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/spancontext"
-	"github.com/galaxy/galaxy/swarm/storage/feed"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/spancontext"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed"
 	"github.com/pborman/uuid"
 )
 

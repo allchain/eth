@@ -19,8 +19,8 @@
 package whisperv6
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 // TopicType represents a cryptographically secure, probabilistic partial

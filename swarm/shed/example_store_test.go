@@ -26,8 +26,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/shed"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/shed"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 	"github.com/syndtr/goleveldb/leveldb"
 )
 

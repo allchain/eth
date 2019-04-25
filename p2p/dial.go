@@ -23,9 +23,9 @@ import (
 	"net"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/netutil"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/netutil"
 )
 
 const (

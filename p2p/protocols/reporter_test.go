@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 //TestReporter tests that the metrics being collected for p2p accounting

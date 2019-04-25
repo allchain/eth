@@ -19,9 +19,9 @@ package types
 import (
 	"bytes"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/trie"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/trie"
 )
 
 type DerivableList interface {

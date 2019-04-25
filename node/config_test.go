@@ -24,8 +24,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
 )
 
 // Tests that datadirs can be successfully created, be them manually configured

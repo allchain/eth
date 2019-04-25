@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
 )
 
 // Query is used to specify constraints when performing an update lookup

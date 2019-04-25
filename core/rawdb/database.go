@@ -17,9 +17,9 @@
 package rawdb
 
 import (
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/ethdb/leveldb"
-	"github.com/galaxy/galaxy/ethdb/memorydb"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/ethdb/leveldb"
+	"github.com/galaxy/galaxy-eth/ethdb/memorydb"
 )
 
 // NewDatabase creates a high level database on top of a given key-value data

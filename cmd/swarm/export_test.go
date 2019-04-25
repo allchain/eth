@@ -26,8 +26,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/swarm"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 )
 
 // TestCLISwarmExportImport perform the following test:

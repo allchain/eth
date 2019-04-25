@@ -19,7 +19,7 @@ package state
 import (
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // journalEntry is a modification entry in the state change journal that can be

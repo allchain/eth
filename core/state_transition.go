@@ -21,10 +21,10 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/vm"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/vm"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 var (

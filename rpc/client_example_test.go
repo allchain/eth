@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"time"
 
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // In this example, our client wishes to track the latest 'block number'

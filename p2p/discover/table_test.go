@@ -27,10 +27,10 @@ import (
 	"testing/quick"
 	"time"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/enr"
-	"github.com/galaxy/galaxy/p2p/netutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
+	"github.com/galaxy/galaxy-eth/p2p/netutil"
 )
 
 func TestTable_pingReplace(t *testing.T) {

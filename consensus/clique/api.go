@@ -17,10 +17,10 @@
 package clique
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // API is a user facing RPC API to allow controlling the signer and voting

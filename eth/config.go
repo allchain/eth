@@ -24,15 +24,15 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/eth/downloader"
-	"github.com/galaxy/galaxy/eth/gasprice"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/eth/downloader"
+	"github.com/galaxy/galaxy-eth/eth/gasprice"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // DefaultConfig contains default settings for use on the Ethereum main net.

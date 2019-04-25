@@ -25,15 +25,15 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/accounts/usbwallet"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/internal/ethapi"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/signer/storage"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/accounts/usbwallet"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/internal/ethapi"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/signer/storage"
 )
 
 const (

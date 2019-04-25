@@ -7,7 +7,7 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 // a regexp for extracting the unit from time.Duration.String

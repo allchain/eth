@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/core/types"
-	elog "github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/core/types"
+	elog "github.com/galaxy/galaxy-eth/log"
 )
 
 func makeBlock(number int64) *types.Block {

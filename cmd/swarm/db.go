@@ -22,10 +22,10 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

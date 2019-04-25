@@ -24,8 +24,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/common/compiler"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/common/compiler"
 )
 
 var (

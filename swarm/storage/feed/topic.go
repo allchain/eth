@@ -21,9 +21,9 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/galaxy/galaxy/common/bitutil"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/common/bitutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 // TopicLength establishes the max length of a topic string

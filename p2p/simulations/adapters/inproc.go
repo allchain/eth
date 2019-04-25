@@ -23,13 +23,13 @@ import (
 	"net"
 	"sync"
 
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations/pipes"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/pipes"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // SimAdapter is a NodeAdapter which creates in-memory simulation nodes and

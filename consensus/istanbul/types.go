@@ -21,9 +21,9 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // Proposal supports retrieving height and serialized block to be used during Istanbul consensus.

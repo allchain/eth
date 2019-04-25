@@ -21,7 +21,7 @@ package dashboard
 import (
 	"syscall"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // getProcessCPUTime retrieves the process' CPU time since program startup.

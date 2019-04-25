@@ -21,11 +21,11 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/log"
-	bv "github.com/galaxy/galaxy/swarm/network/bitvector"
-	"github.com/galaxy/galaxy/swarm/spancontext"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	bv "github.com/galaxy/galaxy-eth/swarm/network/bitvector"
+	"github.com/galaxy/galaxy-eth/swarm/spancontext"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 	"github.com/opentracing/opentracing-go"
 )
 

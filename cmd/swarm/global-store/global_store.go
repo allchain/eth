@@ -22,11 +22,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rpc"
-	"github.com/galaxy/galaxy/swarm/storage/mock"
-	"github.com/galaxy/galaxy/swarm/storage/mock/db"
-	"github.com/galaxy/galaxy/swarm/storage/mock/mem"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rpc"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock/db"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock/mem"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

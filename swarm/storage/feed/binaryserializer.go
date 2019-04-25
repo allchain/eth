@@ -16,7 +16,7 @@
 
 package feed
 
-import "github.com/galaxy/galaxy/common/hexutil"
+import "github.com/galaxy/galaxy-eth/common/hexutil"
 
 type binarySerializer interface {
 	binaryPut(serializedData []byte) error

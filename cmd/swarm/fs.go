@@ -23,10 +23,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/rpc"
-	"github.com/galaxy/galaxy/swarm/fuse"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/rpc"
+	"github.com/galaxy/galaxy-eth/swarm/fuse"
 	"gopkg.in/urfave/cli.v1"
 )
 

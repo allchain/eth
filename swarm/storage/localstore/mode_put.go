@@ -17,8 +17,8 @@
 package localstore
 
 import (
-	"github.com/galaxy/galaxy/swarm/chunk"
-	"github.com/galaxy/galaxy/swarm/shed"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/shed"
 	"github.com/syndtr/goleveldb/leveldb"
 )
 

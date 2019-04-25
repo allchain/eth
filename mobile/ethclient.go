@@ -21,8 +21,8 @@ package geth
 import (
 	"math/big"
 
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/ethclient"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/ethclient"
 )
 
 // EthereumClient provides access to the Ethereum APIs.

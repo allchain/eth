@@ -22,11 +22,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/log"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 type KeyStore struct {

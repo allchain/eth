@@ -26,7 +26,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/galaxy/galaxy/p2p/enr"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
 )
 
 // Node represents a host on the network.

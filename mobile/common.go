@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // Hash represents the 32 byte Keccak256 hash of arbitrary data.

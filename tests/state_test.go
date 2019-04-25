@@ -24,8 +24,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/core/vm"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/core/vm"
 )
 
 func TestState(t *testing.T) {

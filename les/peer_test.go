@@ -4,11 +4,11 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/les/flowcontrol"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/les/flowcontrol"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 const (

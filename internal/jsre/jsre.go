@@ -26,8 +26,8 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/internal/jsre/deps"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/internal/jsre/deps"
 	"github.com/robertkrimen/otto"
 )
 

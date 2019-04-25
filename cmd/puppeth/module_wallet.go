@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // walletDockerfile is the Dockerfile required to run a web wallet.

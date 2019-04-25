@@ -19,8 +19,8 @@ package les
 import (
 	"sync"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/common/prque"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/prque"
 )
 
 // servingQueue allows running tasks in a limited number of threads and puts the

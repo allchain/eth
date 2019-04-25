@@ -37,17 +37,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/api"
-	swarm "github.com/galaxy/galaxy/swarm/api/client"
-	"github.com/galaxy/galaxy/swarm/storage"
-	"github.com/galaxy/galaxy/swarm/storage/feed"
-	"github.com/galaxy/galaxy/swarm/testutil"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	swarm "github.com/galaxy/galaxy-eth/swarm/api/client"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed"
+	"github.com/galaxy/galaxy-eth/swarm/testutil"
 )
 
 func init() {

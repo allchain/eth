@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "github.com/galaxy/galaxy/crypto"
+	ethcrypto "github.com/galaxy/galaxy-eth/crypto"
 )
 
 var (

@@ -22,7 +22,7 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 func init() {

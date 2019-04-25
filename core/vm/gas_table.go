@@ -17,9 +17,9 @@
 package vm
 
 import (
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // memoryGasCost calculates the quadratic gas for memory expansion. It does so

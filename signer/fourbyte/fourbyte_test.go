@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 // Tests that all the selectors contained in the 4byte database are valid.

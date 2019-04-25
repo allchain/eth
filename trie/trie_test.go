@@ -29,12 +29,12 @@ import (
 	"testing/quick"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/ethdb/leveldb"
-	"github.com/galaxy/galaxy/ethdb/memorydb"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/ethdb/leveldb"
+	"github.com/galaxy/galaxy-eth/ethdb/memorydb"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 func init() {

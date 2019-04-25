@@ -17,7 +17,7 @@
 package vm
 
 import (
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 func minSwapStack(n int) int {

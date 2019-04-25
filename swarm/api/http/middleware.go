@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/log"
-	"github.com/galaxy/galaxy/swarm/sctx"
-	"github.com/galaxy/galaxy/swarm/spancontext"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/sctx"
+	"github.com/galaxy/galaxy-eth/swarm/spancontext"
 	"github.com/pborman/uuid"
 )
 

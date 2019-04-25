@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/chunk"
-	"github.com/galaxy/galaxy/swarm/shed"
-	"github.com/galaxy/galaxy/swarm/storage/mock"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/shed"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock"
 )
 
 var (

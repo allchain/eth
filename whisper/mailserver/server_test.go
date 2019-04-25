@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 const powRequirement = 0.00001

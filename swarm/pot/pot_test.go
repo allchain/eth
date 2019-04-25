@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 const (

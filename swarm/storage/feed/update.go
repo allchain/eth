@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
 )
 
 // ProtocolVersion defines the current version of the protocol that will be included in each update message

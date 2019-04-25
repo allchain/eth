@@ -17,7 +17,7 @@
 package localstore
 
 import (
-	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
 )
 
 // Hasser provides Has method to retrieve Chunks

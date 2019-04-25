@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/types"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

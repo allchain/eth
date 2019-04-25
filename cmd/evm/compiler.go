@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/galaxy/galaxy/cmd/evm/internal/compiler"
+	"github.com/galaxy/galaxy-eth/cmd/evm/internal/compiler"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

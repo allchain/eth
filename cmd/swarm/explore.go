@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 	"gopkg.in/urfave/cli.v1"
 )
 

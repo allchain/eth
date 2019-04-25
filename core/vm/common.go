@@ -19,8 +19,8 @@ package vm
 import (
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/math"
 )
 
 // calcMemSize64 calculates the required memory size, and returns

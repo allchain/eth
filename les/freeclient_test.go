@@ -23,8 +23,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
 )
 
 func TestFreeClientPoolL10C100(t *testing.T) {

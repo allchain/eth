@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/ethdb"
 )
 
 var (

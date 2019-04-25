@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/galaxy/galaxy/swarm/pot"
+	"github.com/galaxy/galaxy-eth/swarm/pot"
 )
 
 // discovery bzz extension for requesting and relaying node address records

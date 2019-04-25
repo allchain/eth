@@ -24,9 +24,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/api"
-	swarm "github.com/galaxy/galaxy/swarm/api/client"
-	swarmhttp "github.com/galaxy/galaxy/swarm/api/http"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	swarm "github.com/galaxy/galaxy-eth/swarm/api/client"
+	swarmhttp "github.com/galaxy/galaxy-eth/swarm/api/http"
 )
 
 // TestManifestChange tests manifest add, update and remove

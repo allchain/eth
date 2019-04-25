@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
 )
 
 var (

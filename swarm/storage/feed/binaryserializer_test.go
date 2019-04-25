@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 // KV mocks a key value store

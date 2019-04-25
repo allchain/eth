@@ -17,7 +17,7 @@
 package core
 
 import (
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 type backlogEvent struct {

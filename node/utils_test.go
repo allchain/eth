@@ -22,8 +22,8 @@ package node
 import (
 	"reflect"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // NoopService is a trivial implementation of the Service interface.

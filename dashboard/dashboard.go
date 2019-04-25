@@ -35,10 +35,10 @@ import (
 
 	"io"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/params"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/params"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"github.com/mohae/deepcopy"
 	"golang.org/x/net/websocket"
 )

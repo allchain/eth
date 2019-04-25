@@ -17,7 +17,7 @@
 package shed
 
 import (
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"github.com/syndtr/goleveldb/leveldb"
 )
 

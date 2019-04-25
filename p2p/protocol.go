@@ -19,8 +19,8 @@ package p2p
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/enr"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/enr"
 )
 
 // Protocol represents a P2P subprotocol implementation.

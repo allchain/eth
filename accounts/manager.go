@@ -21,7 +21,7 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 // Config contains the settings of the global account manager.

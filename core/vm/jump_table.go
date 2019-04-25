@@ -19,7 +19,7 @@ package vm
 import (
 	"errors"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 type (

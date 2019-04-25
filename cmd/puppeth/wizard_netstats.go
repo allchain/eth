@@ -23,8 +23,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/log"
 	"github.com/olekukonko/tablewriter"
 )
 

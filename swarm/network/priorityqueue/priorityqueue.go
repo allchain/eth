@@ -30,7 +30,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 var (

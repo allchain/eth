@@ -26,8 +26,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/galaxy/galaxy/common/bitutil"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/common/bitutil"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 // bloomIndexes represents the bit indexes inside the bloom filter that belong

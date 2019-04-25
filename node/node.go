@@ -26,14 +26,14 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/ethdb"
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/internal/debug"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/ethdb"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/internal/debug"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"github.com/prometheus/tsdb/fileutil"
 )
 

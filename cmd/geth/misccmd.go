@@ -23,10 +23,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/consensus/ethash"
-	"github.com/galaxy/galaxy/eth"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/consensus/ethash"
+	"github.com/galaxy/galaxy-eth/eth"
+	"github.com/galaxy/galaxy-eth/params"
 	"gopkg.in/urfave/cli.v1"
 )
 

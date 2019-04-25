@@ -19,7 +19,7 @@ package vm
 import (
 	"math/big"
 
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // Gas costs

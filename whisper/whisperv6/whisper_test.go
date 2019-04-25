@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 	"golang.org/x/crypto/pbkdf2"
 )
 

@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // Enabled is checked by the constructor functions for all of the

@@ -45,12 +45,12 @@ import (
 	"strings"
 	"text/tabwriter"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"gopkg.in/urfave/cli.v1"
 )
 

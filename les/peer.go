@@ -23,14 +23,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/mclock"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/eth"
-	"github.com/galaxy/galaxy/les/flowcontrol"
-	"github.com/galaxy/galaxy/light"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/mclock"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/eth"
+	"github.com/galaxy/galaxy-eth/les/flowcontrol"
+	"github.com/galaxy/galaxy-eth/light"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 var (

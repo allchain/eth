@@ -23,7 +23,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

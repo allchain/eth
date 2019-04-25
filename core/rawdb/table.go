@@ -17,7 +17,7 @@
 package rawdb
 
 import (
-	"github.com/galaxy/galaxy/ethdb"
+	"github.com/galaxy/galaxy-eth/ethdb"
 )
 
 // table is a wrapper around a database that prefixes each key access with a pre-

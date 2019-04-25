@@ -25,9 +25,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rpc"
-	mockRPC "github.com/galaxy/galaxy/swarm/storage/mock/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rpc"
+	mockRPC "github.com/galaxy/galaxy-eth/swarm/storage/mock/rpc"
 )
 
 // TestHTTP_InMemory tests in-memory global store that exposes

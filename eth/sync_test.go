@@ -21,9 +21,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/eth/downloader"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
+	"github.com/galaxy/galaxy-eth/eth/downloader"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
 )
 
 // Tests that fast sync gets disabled as soon as a real block is successfully

@@ -22,9 +22,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/console"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/console"
+	"github.com/galaxy/galaxy-eth/crypto"
 	"gopkg.in/urfave/cli.v1"
 )
 

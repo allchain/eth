@@ -21,7 +21,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 const (

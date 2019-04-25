@@ -27,7 +27,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common/math"
 	"gopkg.in/urfave/cli.v1"
 )
 

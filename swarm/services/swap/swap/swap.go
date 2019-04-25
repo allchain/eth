@@ -22,7 +22,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 // SwAP Swarm Accounting Protocol with

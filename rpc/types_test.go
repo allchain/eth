@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common/math"
 )
 
 func TestBlockNumberJSONUnmarshal(t *testing.T) {

@@ -19,8 +19,8 @@ package core
 import (
 	"time"
 
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
 )
 
 func (c *core) sendPreprepare(request *istanbul.Request) {

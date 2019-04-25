@@ -28,9 +28,9 @@ import (
 	"time"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // Minimum amount of time between cache reloads. This limit applies if the platform does

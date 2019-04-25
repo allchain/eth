@@ -19,7 +19,7 @@ package istanbul
 import (
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 type Validator interface {

@@ -26,7 +26,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 	"github.com/stretchr/testify/require"
 )
 

@@ -24,12 +24,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

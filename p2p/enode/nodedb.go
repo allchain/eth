@@ -26,7 +26,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/iterator"

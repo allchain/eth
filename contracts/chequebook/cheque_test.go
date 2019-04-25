@@ -24,12 +24,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts/abi/bind"
-	"github.com/galaxy/galaxy/accounts/abi/bind/backends"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/contracts/chequebook/contract"
-	"github.com/galaxy/galaxy/core"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind"
+	"github.com/galaxy/galaxy-eth/accounts/abi/bind/backends"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/contracts/chequebook/contract"
+	"github.com/galaxy/galaxy-eth/core"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 var (

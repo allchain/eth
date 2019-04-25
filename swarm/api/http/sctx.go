@@ -3,8 +3,8 @@ package http
 import (
 	"context"
 
-	"github.com/galaxy/galaxy/swarm/api"
-	"github.com/galaxy/galaxy/swarm/sctx"
+	"github.com/galaxy/galaxy-eth/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/sctx"
 )
 
 type uriKey struct{}

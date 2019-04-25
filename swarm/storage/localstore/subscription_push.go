@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/swarm/chunk"
-	"github.com/galaxy/galaxy/swarm/shed"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/shed"
 )
 
 // SubscribePush returns a channel that provides storage chunks with ordering from push syncing index.

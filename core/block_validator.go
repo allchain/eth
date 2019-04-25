@@ -19,10 +19,10 @@ package core
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/consensus"
-	"github.com/galaxy/galaxy/core/state"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/params"
+	"github.com/galaxy/galaxy-eth/consensus"
+	"github.com/galaxy/galaxy-eth/core/state"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/params"
 )
 
 // BlockValidator is responsible for validating block headers, uncles and

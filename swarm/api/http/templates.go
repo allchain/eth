@@ -22,7 +22,7 @@ import (
 	"html/template"
 	"path"
 
-	"github.com/galaxy/galaxy/swarm/api"
+	"github.com/galaxy/galaxy-eth/swarm/api"
 )
 
 type htmlListData struct {

@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 func TestUnmarshalJSONNewFilterArgs(t *testing.T) {

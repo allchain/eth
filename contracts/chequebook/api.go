@@ -20,7 +20,7 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 const Version = "1.0"

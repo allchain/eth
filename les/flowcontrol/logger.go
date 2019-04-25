@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/mclock"
 )
 
 // logger collects events in string format and discards events older than the

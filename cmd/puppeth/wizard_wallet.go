@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 )
 
 // deployWallet creates a new web wallet based on some user input.

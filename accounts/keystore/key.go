@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/crypto"
 	"github.com/pborman/uuid"
 )
 

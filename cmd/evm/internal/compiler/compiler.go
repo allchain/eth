@@ -20,7 +20,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/galaxy/galaxy/core/asm"
+	"github.com/galaxy/galaxy-eth/core/asm"
 )
 
 func Compile(fn string, src []byte, debug bool) (string, error) {

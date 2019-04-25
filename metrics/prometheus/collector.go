@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/metrics"
 )
 
 var (

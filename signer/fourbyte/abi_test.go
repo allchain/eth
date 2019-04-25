@@ -22,8 +22,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/galaxy/galaxy/accounts/abi"
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/accounts/abi"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 func verify(t *testing.T, jsondata, calldata string, exp []interface{}) {

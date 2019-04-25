@@ -19,7 +19,7 @@ package vm
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/crypto"
+	"github.com/galaxy/galaxy-eth/crypto"
 )
 
 func TestJumpDestAnalysis(t *testing.T) {

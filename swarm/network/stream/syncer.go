@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/swarm/log"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/log"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 const (

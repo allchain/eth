@@ -19,7 +19,7 @@ package state
 import (
 	"sync"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 type account struct {

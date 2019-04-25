@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/p2p/simulations/pipes"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

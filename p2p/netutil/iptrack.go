@@ -19,7 +19,7 @@ package netutil
 import (
 	"time"
 
-	"github.com/galaxy/galaxy/common/mclock"
+	"github.com/galaxy/galaxy-eth/common/mclock"
 )
 
 // IPTracker predicts the external endpoint, i.e. IP address and port, of the local host

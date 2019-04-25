@@ -35,11 +35,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common/bitutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/crypto/ecies"
-	"github.com/galaxy/galaxy/crypto/secp256k1"
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/common/bitutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/crypto/ecies"
+	"github.com/galaxy/galaxy-eth/crypto/secp256k1"
+	"github.com/galaxy/galaxy-eth/rlp"
 	"github.com/golang/snappy"
 	"golang.org/x/crypto/sha3"
 )

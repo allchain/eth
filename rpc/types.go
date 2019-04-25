@@ -22,7 +22,7 @@ import (
 	"math"
 	"strings"
 
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 // API describes the set of methods offered over the RPC interface

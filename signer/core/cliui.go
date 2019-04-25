@@ -24,9 +24,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/internal/ethapi"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/internal/ethapi"
+	"github.com/galaxy/galaxy-eth/log"
 	"golang.org/x/crypto/ssh/terminal"
 )
 

@@ -20,9 +20,9 @@ import (
 	"context"
 	"sync"
 
-	ethereum "github.com/galaxy/galaxy"
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/rpc"
+	ethereum "github.com/galaxy/galaxy-eth"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/rpc"
 )
 
 // PublicDownloaderAPI provides an API which gives information about the current synchronisation status.

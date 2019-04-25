@@ -16,7 +16,7 @@
 
 package core
 
-import "github.com/galaxy/galaxy/consensus/istanbul"
+import "github.com/galaxy/galaxy-eth/consensus/istanbul"
 
 func (c *core) handleRequest(request *istanbul.Request) error {
 	logger := c.logger.New("state", c.state, "seq", c.current.sequence)

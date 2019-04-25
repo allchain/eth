@@ -3,7 +3,7 @@ package feed
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/storage/feed/lookup"
+	"github.com/galaxy/galaxy-eth/swarm/storage/feed/lookup"
 )
 
 func getTestID() *ID {

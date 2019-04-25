@@ -23,12 +23,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/consensus/istanbul"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/event"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/metrics"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/consensus/istanbul"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/event"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/metrics"
 	"gopkg.in/karalabe/cookiejar.v2/collections/prque"
 )
 

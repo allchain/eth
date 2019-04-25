@@ -19,7 +19,7 @@ package event_test
 import (
 	"fmt"
 
-	"github.com/galaxy/galaxy/event"
+	"github.com/galaxy/galaxy-eth/event"
 )
 
 func ExampleFeed_acknowledgedEvents() {

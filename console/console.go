@@ -28,9 +28,9 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/galaxy/galaxy/internal/jsre"
-	"github.com/galaxy/galaxy/internal/web3ext"
-	"github.com/galaxy/galaxy/rpc"
+	"github.com/galaxy/galaxy-eth/internal/jsre"
+	"github.com/galaxy/galaxy-eth/internal/web3ext"
+	"github.com/galaxy/galaxy-eth/rpc"
 	"github.com/mattn/go-colorable"
 	"github.com/peterh/liner"
 	"github.com/robertkrimen/otto"

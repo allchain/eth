@@ -27,16 +27,16 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/accounts"
-	"github.com/galaxy/galaxy/accounts/keystore"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/core/types"
-	"github.com/galaxy/galaxy/internal/ethapi"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/signer/core"
-	"github.com/galaxy/galaxy/signer/fourbyte"
-	"github.com/galaxy/galaxy/signer/storage"
+	"github.com/galaxy/galaxy-eth/accounts"
+	"github.com/galaxy/galaxy-eth/accounts/keystore"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/core/types"
+	"github.com/galaxy/galaxy-eth/internal/ethapi"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/signer/core"
+	"github.com/galaxy/galaxy-eth/signer/fourbyte"
+	"github.com/galaxy/galaxy-eth/signer/storage"
 )
 
 //Used for testing

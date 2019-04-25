@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/galaxy/galaxy/swarm/chunk"
+	"github.com/galaxy/galaxy-eth/swarm/chunk"
 )
 
 // TestDB_pullIndex validates the ordering of keys in pull index.

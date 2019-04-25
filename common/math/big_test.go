@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
+	"github.com/galaxy/galaxy-eth/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {

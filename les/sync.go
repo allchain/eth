@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/galaxy/galaxy/core/rawdb"
-	"github.com/galaxy/galaxy/eth/downloader"
-	"github.com/galaxy/galaxy/light"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
+	"github.com/galaxy/galaxy-eth/eth/downloader"
+	"github.com/galaxy/galaxy-eth/light"
 )
 
 // syncer is responsible for periodically synchronising with the network, both

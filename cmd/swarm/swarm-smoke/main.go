@@ -21,13 +21,13 @@ import (
 	"os"
 	"sort"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	gethmetrics "github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/metrics/influxdb"
-	swarmmetrics "github.com/galaxy/galaxy/swarm/metrics"
-	"github.com/galaxy/galaxy/swarm/tracing"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	gethmetrics "github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/metrics/influxdb"
+	swarmmetrics "github.com/galaxy/galaxy-eth/swarm/metrics"
+	"github.com/galaxy/galaxy-eth/swarm/tracing"
 
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/log"
 
 	cli "gopkg.in/urfave/cli.v1"
 )

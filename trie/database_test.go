@@ -19,8 +19,8 @@ package trie
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/ethdb/memorydb"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/ethdb/memorydb"
 )
 
 // Tests that the trie database returns a missing trie node error if attempting

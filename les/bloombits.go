@@ -19,8 +19,8 @@ package les
 import (
 	"time"
 
-	"github.com/galaxy/galaxy/common/bitutil"
-	"github.com/galaxy/galaxy/light"
+	"github.com/galaxy/galaxy-eth/common/bitutil"
+	"github.com/galaxy/galaxy-eth/light"
 )
 
 const (

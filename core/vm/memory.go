@@ -20,7 +20,7 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/galaxy/galaxy/common/math"
+	"github.com/galaxy/galaxy-eth/common/math"
 )
 
 // Memory implements a simple memory model for the ethereum virtual machine.

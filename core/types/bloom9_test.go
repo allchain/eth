@@ -54,7 +54,7 @@ func TestBloom(t *testing.T) {
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/core/state"
+	"github.com/galaxy/galaxy-eth/core/state"
 )
 
 func TestBloom9(t *testing.T) {

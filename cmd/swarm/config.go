@@ -29,13 +29,13 @@ import (
 
 	cli "gopkg.in/urfave/cli.v1"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/node"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/node"
 	"github.com/naoina/toml"
 
-	bzzapi "github.com/galaxy/galaxy/swarm/api"
+	bzzapi "github.com/galaxy/galaxy-eth/swarm/api"
 )
 
 var (
@@ -97,7 +97,7 @@ var tomlSettings = toml.Config{
 	MissingField: func(rt reflect.Type, field string) error {
 		link := ""
 		if unicode.IsUpper(rune(rt.Name()[0])) && rt.PkgPath() != "main" {
-			link = fmt.Sprintf(", check github.com/galaxy/galaxy/swarm/api/config.go for available fields")
+			link = fmt.Sprintf(", check github.com/galaxy/galaxy-eth/swarm/api/config.go for available fields")
 		}
 		return fmt.Errorf("field '%s' is not defined in %s%s", field, rt.String(), link)
 	},

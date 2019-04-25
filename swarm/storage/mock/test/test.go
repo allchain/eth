@@ -26,9 +26,9 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/swarm/storage"
-	"github.com/galaxy/galaxy/swarm/storage/mock"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
+	"github.com/galaxy/galaxy-eth/swarm/storage/mock"
 )
 
 // MockStore creates NodeStore instances from provided GlobalStorer,

@@ -22,7 +22,7 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"github.com/galaxy/galaxy/core/asm"
+	"github.com/galaxy/galaxy-eth/core/asm"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

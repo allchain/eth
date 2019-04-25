@@ -19,8 +19,8 @@ package main
 import (
 	"os"
 
-	"github.com/galaxy/galaxy/cmd/utils"
-	"github.com/galaxy/galaxy/log"
+	"github.com/galaxy/galaxy-eth/cmd/utils"
+	"github.com/galaxy/galaxy-eth/log"
 	cli "gopkg.in/urfave/cli.v1"
 )
 

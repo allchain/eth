@@ -22,8 +22,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/swarm/storage"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/swarm/storage"
 )
 
 //matches hex swarm hashes

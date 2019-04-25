@@ -9,17 +9,17 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/common/hexutil"
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/log"
-	"github.com/galaxy/galaxy/node"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/simulations"
-	"github.com/galaxy/galaxy/p2p/simulations/adapters"
-	"github.com/galaxy/galaxy/swarm/network"
-	"github.com/galaxy/galaxy/swarm/pss"
-	"github.com/galaxy/galaxy/swarm/state"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/log"
+	"github.com/galaxy/galaxy-eth/node"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/simulations"
+	"github.com/galaxy/galaxy-eth/p2p/simulations/adapters"
+	"github.com/galaxy/galaxy-eth/swarm/network"
+	"github.com/galaxy/galaxy-eth/swarm/pss"
+	"github.com/galaxy/galaxy-eth/swarm/state"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 var (

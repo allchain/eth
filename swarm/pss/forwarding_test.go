@@ -6,13 +6,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/galaxy/galaxy/crypto"
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/protocols"
-	"github.com/galaxy/galaxy/swarm/network"
-	"github.com/galaxy/galaxy/swarm/pot"
-	whisper "github.com/galaxy/galaxy/whisper/whisperv6"
+	"github.com/galaxy/galaxy-eth/crypto"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/protocols"
+	"github.com/galaxy/galaxy-eth/swarm/network"
+	"github.com/galaxy/galaxy-eth/swarm/pot"
+	whisper "github.com/galaxy/galaxy-eth/whisper/whisperv6"
 )
 
 type testCase struct {

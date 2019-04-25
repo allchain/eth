@@ -28,11 +28,11 @@
 //  	"context"
 //  	"fmt"
 //  	"os"
-//  	pss "github.com/galaxy/galaxy/swarm/pss/client"
-//  	"github.com/galaxy/galaxy/p2p/protocols"
-//  	"github.com/galaxy/galaxy/p2p"
-//  	"github.com/galaxy/galaxy/swarm/pot"
-//  	"github.com/galaxy/galaxy/swarm/log"
+//  	pss "github.com/galaxy/galaxy-eth/swarm/pss/client"
+//  	"github.com/galaxy/galaxy-eth/p2p/protocols"
+//  	"github.com/galaxy/galaxy-eth/p2p"
+//  	"github.com/galaxy/galaxy-eth/swarm/pot"
+//  	"github.com/galaxy/galaxy-eth/swarm/log"
 //  )
 //
 //  type FooMsg struct {

@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/galaxy/galaxy/p2p"
-	"github.com/galaxy/galaxy/p2p/enode"
-	"github.com/galaxy/galaxy/p2p/protocols"
-	"github.com/galaxy/galaxy/rlp"
-	"github.com/galaxy/galaxy/swarm/log"
+	"github.com/galaxy/galaxy-eth/p2p"
+	"github.com/galaxy/galaxy-eth/p2p/enode"
+	"github.com/galaxy/galaxy-eth/p2p/protocols"
+	"github.com/galaxy/galaxy-eth/rlp"
+	"github.com/galaxy/galaxy-eth/swarm/log"
 )
 
 // ENRAddrEntry is the entry type to store the bzz key in the enode

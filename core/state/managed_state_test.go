@@ -19,8 +19,8 @@ package state
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/common"
-	"github.com/galaxy/galaxy/core/rawdb"
+	"github.com/galaxy/galaxy-eth/common"
+	"github.com/galaxy/galaxy-eth/core/rawdb"
 )
 
 var addr = common.BytesToAddress([]byte("test"))

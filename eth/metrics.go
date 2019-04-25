@@ -17,8 +17,8 @@
 package eth
 
 import (
-	"github.com/galaxy/galaxy/metrics"
-	"github.com/galaxy/galaxy/p2p"
+	"github.com/galaxy/galaxy-eth/metrics"
+	"github.com/galaxy/galaxy-eth/p2p"
 )
 
 var (

@@ -3,7 +3,7 @@ package feed
 import (
 	"testing"
 
-	"github.com/galaxy/galaxy/common/hexutil"
+	"github.com/galaxy/galaxy-eth/common/hexutil"
 )
 
 func TestTopic(t *testing.T) {

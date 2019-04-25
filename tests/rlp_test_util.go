@@ -24,7 +24,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/galaxy/galaxy/rlp"
+	"github.com/galaxy/galaxy-eth/rlp"
 )
 
 // RLPTest is the JSON structure of a single RLP test.
