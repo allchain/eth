@@ -151,10 +151,14 @@ func (sb *backend) Gossip(valSet istanbul.ValidatorSet, payload []byte) error {
 			} else {
 				m, _ = lru.NewARC(inmemoryMessages)
 			}
-
 			m.Add(hash, true)
 			sb.recentMessages.Add(addr, m)
-			go p.Send(istanbulMsg, payload)
+			go func(address common.Address, p consensus.Peer) {
+				err := p.Send(istanbulMsg, payload)
+				if err != nil {
+					log.Error("failed gossip send msg", "addr", address, "err", err)
+				}
+			}(addr, p)
 		}
 	}
 	return nil

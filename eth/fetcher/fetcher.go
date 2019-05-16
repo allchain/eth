@@ -598,7 +598,6 @@ func (f *Fetcher) rescheduleComplete(complete *time.Timer) {
 // has not yet been seen.
 func (f *Fetcher) enqueue(peer string, block *types.Block) {
 	hash := block.Hash()
-
 	// Ensure the peer isn't DOSing us
 	count := f.queues[peer] + 1
 	if count > blockLimit {

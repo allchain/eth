@@ -129,7 +129,6 @@ func (c *core) finalizeMessage(msg *message) ([]byte, error) {
 }
 
 func (c *core) broadcast(msg *message) {
-	log.Info("----broadcast---", "code", msg.Code)
 	logger := c.logger.New("state", c.state)
 
 	payload, err := c.finalizeMessage(msg)

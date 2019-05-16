@@ -19,7 +19,6 @@ package core
 import (
 	"github.com/galaxy/galaxy-eth/common"
 	"github.com/galaxy/galaxy-eth/consensus/istanbul"
-	"github.com/galaxy/galaxy-eth/log"
 )
 
 // Start implements core.Engine.Start
@@ -164,7 +163,6 @@ func (c *core) handleCheckedMsg(msg *message, src istanbul.Validator) error {
 
 		return err
 	}
-	log.Info("----------handel check msg----------", "code", msg.Code)
 	switch msg.Code {
 	case msgPreprepare:
 		return testBacklog(c.handlePreprepare(msg, src))

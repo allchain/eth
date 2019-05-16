@@ -7,6 +7,7 @@ datadir=~/Library/Ethereum
 verbosity=4
 port=30302
 rpcport=8544
+rpcapi="admin,miner,eth"
 
 #case ${n} in
 #
@@ -21,4 +22,4 @@ rpcport=8544
 #    ;;
 #esac
 
-${geth} --datadir ${datadir}/${n} --verbosity ${verbosity} --port `expr ${port} + ${n}` --rpc --rpcport `expr ${rpcport} + ${n}` --rpcapi "admin,miner" --syncmode "full" console
+${geth} --datadir ${datadir}/${n} --verbosity ${verbosity} --port `expr ${port} + ${n}` --rpc --rpcport `expr ${rpcport} + ${n}` --rpcapi ${rpcapi} --syncmode "full" console

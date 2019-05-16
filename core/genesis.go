@@ -304,7 +304,7 @@ func GenesisBlockForTesting(db ethdb.Database, addr common.Address, balance *big
 
 // DefaultGenesisBlock returns the Ethereum main net genesis block.
 func DefaultGenesisBlock() *Genesis {
-	return &Genesis{
+	genesis := Genesis{
 		Config: params.MainnetChainConfig,
 		Nonce:  math.MaxUint64,
 		//ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa"),
@@ -314,6 +314,20 @@ func DefaultGenesisBlock() *Genesis {
 		Alloc:      decodePrealloc(mainnetAllocData),
 		Mixhash:    types.IstanbulDigest,
 	}
+	var header types.Header
+	header.Extra = genesis.ExtraData
+	istanbulExtra, err := types.ExtractIstanbulExtra(&header)
+	if err != nil {
+		panic("genesis decode failed")
+	}
+	alloc := make(map[common.Address]GenesisAccount, len(istanbulExtra.Validators))
+	eth := new(big.Int).SetUint64(params.Ether)
+	balance := eth.Mul(eth, big.NewInt(9000000))
+	for _, v := range istanbulExtra.Validators {
+		alloc[v] = GenesisAccount{Balance:balance}
+	}
+	genesis.Alloc = alloc
+	return &genesis
 }
 
 // DefaultTestnetGenesisBlock returns the Ropsten network genesis block.
