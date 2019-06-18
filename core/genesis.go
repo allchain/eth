@@ -309,7 +309,7 @@ func DefaultGenesisBlock() *Genesis {
 		Nonce:  math.MaxUint64,
 		//ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82fa"),
 		ExtraData:  hexutil.MustDecode("0x11bbe8db4e347b4e8c937c1c8370e4b5ed33adb3db69cbdb7a38e1e50b1b82faf86df86994dab21cf3587db83c9c5a871baf1a09006df90d6d946fe95084fd21d672e4db06e1ba92e9e3d2dc0bfc94955d6e2d9ec391b31600a7dded61b7024e7184aa944ba8f974d2d8355c1981999c2edf7399d39a9b92946b1fbb95c1d2758bf637d5683c30eaa4eb05497980c0"),
-		GasLimit:   5000,
+		GasLimit:   4700000,
 		Difficulty: big.NewInt(1),
 		Alloc:      decodePrealloc(mainnetAllocData),
 		Mixhash:    types.IstanbulDigest,
@@ -324,7 +324,7 @@ func DefaultGenesisBlock() *Genesis {
 	eth := new(big.Int).SetUint64(params.Ether)
 	balance := eth.Mul(eth, big.NewInt(9000000))
 	for _, v := range istanbulExtra.Validators {
-		alloc[v] = GenesisAccount{Balance:balance}
+		alloc[v] = GenesisAccount{Balance: balance}
 	}
 	genesis.Alloc = alloc
 	return &genesis

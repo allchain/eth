@@ -48,7 +48,7 @@ var (
 		//Ethash:              new(EthashConfig),
 		Istanbul: &IstanbulConfig{
 			Epoch:          0,
-			ProposerPolicy: 1,
+			ProposerPolicy: 0,
 		},
 	}
 

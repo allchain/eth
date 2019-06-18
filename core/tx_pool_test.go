@@ -26,6 +26,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/galaxy/galaxy-eth/log"
+
 	"github.com/galaxy/galaxy-eth/common"
 	"github.com/galaxy/galaxy-eth/core/rawdb"
 	"github.com/galaxy/galaxy-eth/core/state"
@@ -1831,4 +1833,23 @@ func benchmarkPoolBatchInsert(b *testing.B, size int) {
 	for _, batch := range batches {
 		pool.AddRemotes(batch)
 	}
+}
+
+func TestTxPool_SubscribeNewTxsEvent(t *testing.T) {
+	txpool, _ := setupTxPool()
+	txsCh := make(chan NewTxsEvent, 12)
+	txsSub := txpool.SubscribeNewTxsEvent(txsCh)
+	defer txsSub.Unsubscribe()
+	go func() {
+		for {
+			select {
+			case c := <-txsCh:
+				t.Log("--->>>", len(c.Txs))
+			case <-txsSub.Err():
+				t.Log("Err")
+			}
+		}
+	}()
+	txsCh <- NewTxsEvent{Txs: nil}
+	time.Sleep(time.Second * 3)
 }

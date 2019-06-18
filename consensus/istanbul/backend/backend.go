@@ -195,6 +195,7 @@ func (sb *backend) Commit(proposal istanbul.Proposal, seals [][]byte) error {
 		sb.commitCh <- block
 		return nil
 	}
+	sb.commitCh <- nil
 
 	if sb.broadcaster != nil {
 		sb.broadcaster.Enqueue(fetcherID, block)
@@ -339,7 +340,7 @@ func encodeSigHeader(w io.Writer, header *types.Header) {
 		header.GasLimit,
 		header.GasUsed,
 		header.Time,
-		header.Extra[types.IstanbulExtraVanity:], // Yes, this will panic if extra is too short
+		header.Extra[:types.IstanbulExtraVanity], // Yes, this will panic if extra is too short
 		header.MixDigest,
 		header.Nonce,
 	})

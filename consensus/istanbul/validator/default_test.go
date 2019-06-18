@@ -18,6 +18,7 @@ package validator
 
 import (
 	"reflect"
+	"strconv"
 	"strings"
 	"testing"
 
@@ -136,39 +137,39 @@ func testEmptyValSet(t *testing.T) {
 
 func testAddAndRemoveValidator(t *testing.T) {
 	valSet := NewSet(ExtractValidators([]byte{}), istanbul.RoundRobin)
-	if !valSet.AddValidator(common.StringToAddress(string(2))) {
+	if !valSet.AddValidator(common.BytesToAddress([]byte("2"))) {
 		t.Error("the validator should be added")
 	}
-	if valSet.AddValidator(common.StringToAddress(string(2))) {
+	if valSet.AddValidator(common.BytesToAddress([]byte("2"))) {
 		t.Error("the existing validator should not be added")
 	}
-	valSet.AddValidator(common.StringToAddress(string(1)))
-	valSet.AddValidator(common.StringToAddress(string(0)))
+	valSet.AddValidator(common.BytesToAddress([]byte("1")))
+	valSet.AddValidator(common.BytesToAddress([]byte("0")))
 	if len(valSet.List()) != 3 {
 		t.Error("the size of validator set should be 3")
 	}
 
 	for i, v := range valSet.List() {
-		expected := common.StringToAddress(string(i))
+		expected := common.BytesToAddress([]byte(strconv.Itoa(i)))
 		if v.Address() != expected {
 			t.Errorf("the order of validators is wrong: have %v, want %v", v.Address().Hex(), expected.Hex())
 		}
 	}
 
-	if !valSet.RemoveValidator(common.StringToAddress(string(2))) {
+	if !valSet.RemoveValidator(common.BytesToAddress([]byte("2"))) {
 		t.Error("the validator should be removed")
 	}
-	if valSet.RemoveValidator(common.StringToAddress(string(2))) {
+	if valSet.RemoveValidator(common.BytesToAddress([]byte("2"))) {
 		t.Error("the non-existing validator should not be removed")
 	}
 	if len(valSet.List()) != 2 {
 		t.Error("the size of validator set should be 2")
 	}
-	valSet.RemoveValidator(common.StringToAddress(string(1)))
+	valSet.RemoveValidator(common.BytesToAddress([]byte("1")))
 	if len(valSet.List()) != 1 {
 		t.Error("the size of validator set should be 1")
 	}
-	valSet.RemoveValidator(common.StringToAddress(string(0)))
+	valSet.RemoveValidator(common.BytesToAddress([]byte("0")))
 	if len(valSet.List()) != 0 {
 		t.Error("the size of validator set should be 0")
 	}
@@ -205,4 +206,24 @@ func testStickyProposer(t *testing.T) {
 	if val := valSet.GetProposer(); !reflect.DeepEqual(val, val2) {
 		t.Errorf("proposer mismatch: have %v, want %v", val, val2)
 	}
+}
+
+func getSet() istanbul.ValidatorSet {
+	addr := common.HexToAddress("0x955D6E2d9eC391b31600a7ddEd61b7024e7184AA")
+	addrs := []common.Address{
+		common.HexToAddress("0x4ba8F974D2D8355c1981999C2edF7399d39A9B92"),
+		common.HexToAddress("0x6B1fbB95C1D2758bF637d5683C30eaa4EB054979"),
+		common.HexToAddress("0x6FE95084FD21d672E4dB06e1BA92E9e3d2Dc0BfC"),
+		addr,
+		common.HexToAddress("0xDAb21CF3587dB83C9C5A871BAf1a09006df90d6d"),
+	}
+	return newDefaultSet(addrs, istanbul.RoundRobin)
+}
+
+func TestDefaultSet_CalcProposer(t *testing.T) {
+	addr := common.HexToAddress("0x955D6E2d9eC391b31600a7ddEd61b7024e7184AA")
+	set := getSet()
+	t.Log(set.GetProposer().Address().Hex())
+	set.CalcProposer(addr, 0)
+	t.Log(set.GetProposer())
 }

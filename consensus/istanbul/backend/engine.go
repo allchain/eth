@@ -439,19 +439,21 @@ func (sb *backend) Seal(chain consensus.ChainReader, block *types.Block, results
 		Proposal: block,
 	})
 
-	for {
-		select {
-		case result := <-sb.commitCh:
-			// if the block hash and the hash from channel are the same,
-			// return the result. Otherwise, keep waiting the next hash.
-			if block.Hash() == result.Hash() {
-				results <- result
-				return nil
-			}
-		case <-stop:
-			return nil
-		}
+	//for {
+	select {
+	case result := <-sb.commitCh:
+		// if the block hash and the hash from channel are the same,
+		// return the result. Otherwise, keep waiting the next hash.
+		//if block.Hash() == result.Hash() {
+		//	results <- result
+		//	return nil
+		//}
+		results <- result
+		return nil
+	case <-stop:
+		return nil
 	}
+	//}
 }
 
 // CalcDifficulty is the difficulty adjustment algorithm. It returns the difficulty
@@ -527,6 +529,10 @@ func (sb *backend) Stop() error {
 	}
 	sb.coreStarted = false
 	return nil
+}
+
+func (sb *backend) Close() error {
+	return sb.Stop()
 }
 
 // snapshot retrieves the authorization snapshot at a given point in time.

@@ -106,6 +106,8 @@ type Engine interface {
 
 	// Protocol returns the protocol for this consensus
 	Protocol() Protocol
+
+	Close() error
 }
 
 // Handler should be implemented is the consensus needs to handle and send peer's message

@@ -112,9 +112,10 @@ func (valSet *defaultSet) IsProposer(address common.Address) bool {
 }
 
 func (valSet *defaultSet) CalcProposer(lastProposer common.Address, round uint64) {
+	proposer := valSet.selector(valSet, lastProposer, round)
 	valSet.validatorMu.RLock()
 	defer valSet.validatorMu.RUnlock()
-	valSet.proposer = valSet.selector(valSet, lastProposer, round)
+	valSet.proposer = proposer
 }
 
 func calcSeed(valSet istanbul.ValidatorSet, proposer common.Address, round uint64) uint64 {

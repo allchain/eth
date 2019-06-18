@@ -18,6 +18,7 @@ package backend
 
 import (
 	"errors"
+
 	"github.com/galaxy/galaxy-eth/common"
 	"github.com/galaxy/galaxy-eth/consensus"
 	"github.com/galaxy/galaxy-eth/consensus/istanbul"
