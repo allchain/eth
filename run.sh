@@ -7,7 +7,7 @@ datadir=~/Library/Ethereum
 verbosity=4
 port=30302
 rpcport=8544
-rpcapi="admin,miner,eth"
+rpcapi="admin,miner,eth,istanbul"
 
 #case ${n} in
 #
